@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="CodebunnyBush.png">
+<SubTexture name="idle0000" x="0" y="0" width="166" height="74" frameX="0" frameY="-20" frameWidth="166" frameHeight="94" />
+<SubTexture name="idle0001" x="166" y="0" width="158" height="81" frameX="0" frameY="-13" frameWidth="158" frameHeight="94" />
+<SubTexture name="idle0002" x="0" y="81" width="152" height="87" frameX="0" frameY="-7" frameWidth="152" frameHeight="94" />
+<SubTexture name="idle0003" x="152" y="81" width="138" height="94" frameX="-2" frameY="0" frameWidth="140" frameHeight="94" />
+<SubTexture name="right0000" x="0" y="175" width="203" height="126" frameX="0" frameY="-8" frameWidth="205" frameHeight="134" />
+<SubTexture name="right0001" x="203" y="175" width="205" height="134" frameX="0" frameY="0" frameWidth="205" frameHeight="134" />
+<SubTexture name="left0000" x="0" y="309" width="126" height="95" frameX="0" frameY="-1" frameWidth="132" frameHeight="96" />
+<SubTexture name="left0001" x="126" y="309" width="131" height="96" frameX="0" frameY="0" frameWidth="131" frameHeight="96" />
+<SubTexture name="up0000" x="0" y="405" width="121" height="165" frameX="0" frameY="0" frameWidth="130" frameHeight="165" />
+<SubTexture name="up0001" x="121" y="405" width="130" height="165" frameX="0" frameY="0" frameWidth="130" frameHeight="165" />
+<SubTexture name="down0000" x="0" y="570" width="128" height="69" frameX="0" frameY="0" frameWidth="128" frameHeight="69" />
+<SubTexture name="down0001" x="128" y="570" width="131" height="78" frameX="0" frameY="0" frameWidth="131" frameHeight="78" />
+</TextureAtlas>

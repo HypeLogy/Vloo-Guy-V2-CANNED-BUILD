@@ -1,0 +1,81 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-2,
+				-3
+			],
+			"loop": false,
+			"anim": "sad",
+			"fps": 24,
+			"name": "gf sad",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			]
+		},
+		{
+			"offsets": [
+				-115,
+				-181
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "GF Dancing Beat up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-19
+			],
+			"anim": "Idle",
+			"fps": 24,
+			"name": "GF Dancing Beat up",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "GF Dancing Beat up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/GF_DSide",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

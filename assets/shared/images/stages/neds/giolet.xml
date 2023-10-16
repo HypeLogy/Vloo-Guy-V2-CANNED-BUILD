@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="giolet.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="giolet0000" x="5" y="5" width="424" height="478"/>
+	<SubTexture name="giolet0001" x="5" y="5" width="424" height="478"/>
+	<SubTexture name="giolet0002" x="434" y="5" width="424" height="478"/>
+	<SubTexture name="giolet0003" x="434" y="5" width="424" height="478"/>
+	<SubTexture name="giolet0004" x="5" y="488" width="424" height="478"/>
+	<SubTexture name="giolet0005" x="5" y="488" width="424" height="478"/>
+	<SubTexture name="giolet0006" x="434" y="488" width="424" height="478"/>
+	<SubTexture name="giolet0007" x="434" y="488" width="424" height="478"/>
+	<SubTexture name="giolet0008" x="434" y="488" width="424" height="478"/>
+	<SubTexture name="giolet0009" x="434" y="488" width="424" height="478"/>
+</TextureAtlas>

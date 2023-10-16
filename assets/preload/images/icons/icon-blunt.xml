@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="blunt.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="L0000" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0001" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0002" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0003" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0004" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0005" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0006" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0007" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0008" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0009" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0010" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0011" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0012" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0013" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0014" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0015" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0016" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="L0017" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0000" x="100" y="100" width="500" height="500"/>
+	<SubTexture name="guh0001" x="100" y="100" width="500" height="500"/>
+	<SubTexture name="guh0002" x="100" y="100" width="500" height="500"/>
+	<SubTexture name="guh0003" x="605" y="100" width="500" height="500"/>
+	<SubTexture name="guh0004" x="605" y="100" width="500" height="500"/>
+	<SubTexture name="guh0005" x="605" y="100" width="500" height="500"/>
+	<SubTexture name="guh0006" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0007" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0008" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0009" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0010" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0011" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0012" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0013" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0014" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0015" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0016" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="guh0017" x="1110" y="100" width="500" height="500"/>
+	<SubTexture name="n0000" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0001" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0002" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0003" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0004" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0005" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0006" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0007" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0008" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0009" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0010" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0011" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0012" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0013" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0014" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0015" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0016" x="100" y="605" width="500" height="500"/>
+	<SubTexture name="n0017" x="100" y="605" width="500" height="500"/>
+</TextureAtlas>

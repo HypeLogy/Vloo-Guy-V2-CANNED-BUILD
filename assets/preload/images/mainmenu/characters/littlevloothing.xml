@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="littlevloothing.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="littlevloodance0000" x="0" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0001" x="0" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0002" x="0" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0003" x="0" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0004" x="0" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0005" x="410" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0006" x="410" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0007" x="410" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0008" x="410" y="0" width="410" height="437"/>
+	<SubTexture name="littlevloodance0009" x="410" y="0" width="410" height="437"/>
+</TextureAtlas>

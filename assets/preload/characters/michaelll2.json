@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-41,
+				-3
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 30,
+			"name": "altRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				119,
+				-3
+			],
+			"anim": "singLEFT-alt",
+			"fps": 30,
+			"name": "altLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				50,
+				30
+			],
+			"anim": "singDOWN-alt",
+			"fps": 30,
+			"name": "altDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				90,
+				160
+			],
+			"anim": "singUP-alt",
+			"fps": 30,
+			"name": "altUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				74,
+				-102
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				-61
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				28
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-43,
+				-81
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "",
+			"indices": [],
+			"name": ""
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/michaelll2",
+	"position": [
+		20,
+		340
+	],
+	"healthicon": "mikeyboy",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		15,
+		55
+	],
+	"camera_position": [
+		-200,
+		-110
+	],
+	"sing_duration": 6.1,
+	"scale": 2.2
+}

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GFd side_ass_sets.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF Dancing Beat0000" x="18" y="18" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0001" x="752" y="18" width="719" height="656" frameX="0" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0002" x="1489" y="18" width="719" height="656" frameX="0" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0003" x="2226" y="18" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0004" x="2960" y="18" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0005" x="2960" y="18" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0006" x="18" y="692" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0007" x="752" y="692" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0008" x="752" y="692" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0009" x="752" y="692" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0010" x="1486" y="692" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0011" x="1486" y="692" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0012" x="1486" y="692" width="716" height="656" frameX="-2" frameY="-1" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0013" x="2220" y="692" width="716" height="654" frameX="-2" frameY="-3" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0014" x="2220" y="692" width="716" height="654" frameX="-2" frameY="-3" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0015" x="2954" y="692" width="716" height="654" frameX="-2" frameY="-3" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0016" x="18" y="1366" width="719" height="654" frameX="0" frameY="-3" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0017" x="755" y="1366" width="719" height="653" frameX="0" frameY="-4" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0018" x="1492" y="1366" width="716" height="653" frameX="-2" frameY="-4" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0019" x="2226" y="1366" width="716" height="653" frameX="-2" frameY="-4" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0020" x="2226" y="1366" width="716" height="653" frameX="-2" frameY="-4" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0021" x="2960" y="1366" width="716" height="654" frameX="-2" frameY="-3" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0022" x="18" y="2038" width="716" height="657" frameX="-2" frameY="0" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0023" x="18" y="2038" width="716" height="657" frameX="-2" frameY="0" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0024" x="18" y="2038" width="716" height="657" frameX="-2" frameY="0" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0025" x="752" y="2038" width="716" height="657" frameX="-2" frameY="0" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0026" x="752" y="2038" width="716" height="657" frameX="-2" frameY="0" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0027" x="752" y="2038" width="716" height="657" frameX="-2" frameY="0" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0028" x="1486" y="2038" width="716" height="657" frameX="-2" frameY="0" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat0029" x="1486" y="2038" width="716" height="657" frameX="-2" frameY="0" frameWidth="719" frameHeight="657"/>
+	<SubTexture name="GF Dancing Beat up0000" x="2220" y="2038" width="367" height="503" frameX="-8" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0001" x="2605" y="2038" width="388" height="503"/>
+	<SubTexture name="GF Dancing Beat up0002" x="2605" y="2038" width="388" height="503"/>
+	<SubTexture name="GF Dancing Beat up0003" x="3011" y="2038" width="378" height="503" frameX="-6" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0004" x="3407" y="2038" width="375" height="503" frameX="-6" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0005" x="18" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0006" x="18" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0007" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0008" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0009" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0010" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0011" x="790" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0012" x="790" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0013" x="1176" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0014" x="1176" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0015" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0016" x="1562" y="2713" width="388" height="503"/>
+	<SubTexture name="GF Dancing Beat up0017" x="1562" y="2713" width="388" height="503"/>
+	<SubTexture name="GF Dancing Beat up0018" x="3011" y="2038" width="378" height="503" frameX="-6" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0019" x="3407" y="2038" width="375" height="503" frameX="-6" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0020" x="18" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0021" x="18" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0022" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0023" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0024" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0025" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0026" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0027" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0028" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="GF Dancing Beat up0029" x="404" y="2713" width="368" height="503" frameX="-7" frameY="0" frameWidth="388" frameHeight="503"/>
+	<SubTexture name="gf sad0000" x="1968" y="2713" width="716" height="646" frameX="0" frameY="-28" frameWidth="716" frameHeight="674"/>
+	<SubTexture name="gf sad0001" x="2702" y="2713" width="716" height="646" frameX="0" frameY="-28" frameWidth="716" frameHeight="674"/>
+	<SubTexture name="gf sad0002" x="18" y="3377" width="716" height="666" frameX="0" frameY="-8" frameWidth="716" frameHeight="674"/>
+	<SubTexture name="gf sad0003" x="18" y="3377" width="716" height="666" frameX="0" frameY="-8" frameWidth="716" frameHeight="674"/>
+	<SubTexture name="gf sad0004" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0005" x="1486" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0006" x="2220" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0007" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0008" x="1486" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0009" x="2220" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0010" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0011" x="1486" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0012" x="2220" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0013" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0014" x="1486" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0015" x="2220" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0016" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0017" x="1486" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0018" x="2220" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0019" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0020" x="1486" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0021" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0022" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0023" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0024" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0025" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0026" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0027" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0028" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0029" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0030" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0031" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0032" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0033" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0034" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0035" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0036" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0037" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0038" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0039" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0040" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0041" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0042" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0043" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0044" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0045" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0046" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0047" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0048" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0049" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0050" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0051" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0052" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0053" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0054" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0055" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0056" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0057" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0058" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0059" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0060" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0061" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0062" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0063" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0064" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0065" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0066" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0067" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0068" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0069" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0070" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0071" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0072" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0073" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0074" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0075" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0076" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0077" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0078" x="752" y="3377" width="716" height="674"/>
+	<SubTexture name="gf sad0079" x="752" y="3377" width="716" height="674"/>
+</TextureAtlas>

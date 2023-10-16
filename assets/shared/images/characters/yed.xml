@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sprite-0002.png">
+    <!-- Made using Maru Aseprite JSON to XML converter -->
+    <SubTexture name="idle00000" x="0" y="0" width="535" height="777"/>
+    <SubTexture name="idle00001" x="535" y="0" width="535" height="777"/>
+    <SubTexture name="idle00002" x="1070" y="0" width="535" height="777"/>
+    <SubTexture name="idle00003" x="1605" y="0" width="535" height="777"/>
+    <SubTexture name="down00000" x="0" y="777" width="535" height="777"/>
+    <SubTexture name="down00001" x="535" y="777" width="535" height="777"/>
+    <SubTexture name="left00000" x="1070" y="777" width="535" height="777"/>
+    <SubTexture name="left00001" x="1605" y="777" width="535" height="777"/>
+    <SubTexture name="right00000" x="0" y="1554" width="535" height="777"/>
+    <SubTexture name="right00001" x="535" y="1554" width="535" height="777"/>
+    <SubTexture name="up00000" x="1070" y="1554" width="535" height="777"/>
+    <SubTexture name="up00001" x="1605" y="1554" width="535" height="777"/>
+</TextureAtlas>

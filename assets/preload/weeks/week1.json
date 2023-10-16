@@ -1,0 +1,77 @@
+{
+	"storyName": "Your New Week",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"guy",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"bite",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"golden",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"sloo",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"unlikely-rivals",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"beastbox",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Custom Week",
+	"hiddenUntilUnlocked": false
+}

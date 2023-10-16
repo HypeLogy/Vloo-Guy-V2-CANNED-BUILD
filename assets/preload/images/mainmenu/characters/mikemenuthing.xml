@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mikemenuthing.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="mikemenuthing0000" x="10" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0001" x="10" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0002" x="10" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0003" x="10" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0004" x="10" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0005" x="718" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0006" x="718" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0007" x="718" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0008" x="718" y="10" width="698" height="610"/>
+	<SubTexture name="mikemenuthing0009" x="718" y="10" width="698" height="610"/>
+</TextureAtlas>

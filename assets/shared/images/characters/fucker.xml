@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fucker.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fucked miss all0000" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0001" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0002" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0003" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0004" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0005" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0006" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0007" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0008" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0009" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0010" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0011" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0012" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked miss all0013" x="0" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0000" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0001" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0002" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0003" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0004" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0005" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0006" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0007" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0008" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0009" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0010" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0011" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0012" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucked up0013" x="769" y="0" width="769" height="507"/>
+	<SubTexture name="fucker death0000" x="0" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0000" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0001" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0002" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0003" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0004" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0005" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0006" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0007" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0008" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0009" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0010" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0011" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0012" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker down0013" x="769" y="507" width="769" height="507"/>
+	<SubTexture name="fucker idle0000" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0001" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0002" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0003" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0004" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0005" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0006" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0007" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0008" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0009" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0010" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0011" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0012" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker idle0013" x="0" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0000" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0001" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0002" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0003" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0004" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0005" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0006" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0007" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0008" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0009" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0010" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0011" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0012" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker left0013" x="769" y="1014" width="769" height="507"/>
+	<SubTexture name="fucker right0000" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0001" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0002" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0003" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0004" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0005" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0006" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0007" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0008" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0009" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0010" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0011" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0012" x="0" y="1521" width="769" height="507"/>
+	<SubTexture name="fucker right0013" x="0" y="1521" width="769" height="507"/>
+</TextureAtlas>

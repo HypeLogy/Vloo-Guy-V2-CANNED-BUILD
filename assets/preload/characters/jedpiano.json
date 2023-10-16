@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				2,
+				-2
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "jr",
+			"indices": []
+		},
+		{
+			"offsets": [
+				2,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "ji"
+		},
+		{
+			"offsets": [
+				2,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "ju"
+		},
+		{
+			"offsets": [
+				2,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "jl"
+		},
+		{
+			"offsets": [
+				2,
+				-2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "jd"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/jedpianofire",
+	"position": [
+		-70,
+		-200
+	],
+	"healthicon": "jedd",
+	"flip_x": false,
+	"healthbar_colors": [
+		39,
+		37,
+		61
+	],
+	"camera_position": [
+		50,
+		-220
+	],
+	"sing_duration": 6.1,
+	"scale": 1.6
+}

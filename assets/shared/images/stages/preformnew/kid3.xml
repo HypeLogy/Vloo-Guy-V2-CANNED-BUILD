@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="kid3.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="kid30000" x="0" y="0" width="185" height="146" frameX="0" frameY="-5" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30001" x="0" y="0" width="185" height="146" frameX="0" frameY="-5" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30002" x="185" y="0" width="184" height="150" frameX="-4" frameY="-1" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30003" x="185" y="0" width="184" height="150" frameX="-4" frameY="-1" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30004" x="369" y="0" width="184" height="151" frameX="-5" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30005" x="369" y="0" width="184" height="151" frameX="-5" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30006" x="553" y="0" width="184" height="151" frameX="-6" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30007" x="553" y="0" width="184" height="151" frameX="-6" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30008" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30009" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30010" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30011" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30012" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30013" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30014" x="0" y="151" width="183" height="138" frameX="-12" frameY="-13" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30015" x="0" y="151" width="183" height="138" frameX="-12" frameY="-13" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30016" x="183" y="151" width="183" height="146" frameX="-9" frameY="-5" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30017" x="183" y="151" width="183" height="146" frameX="-9" frameY="-5" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30018" x="366" y="151" width="184" height="150" frameX="-7" frameY="-1" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30019" x="366" y="151" width="184" height="150" frameX="-7" frameY="-1" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30020" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30021" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30022" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30023" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30024" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30025" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30026" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+	<SubTexture name="kid30027" x="737" y="0" width="183" height="151" frameX="-7" frameY="0" frameWidth="195" frameHeight="151"/>
+</TextureAtlas>

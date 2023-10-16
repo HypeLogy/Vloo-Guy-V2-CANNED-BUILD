@@ -1,0 +1,48 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				400,
+				360
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "mushroom",
+			"indices": [],
+			"name": "wake up"
+		},
+		{
+			"offsets": [
+				400,
+				360
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [
+				1,
+				2
+			],
+			"name": "wake up"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/sex_joke",
+	"position": [
+		-380,
+		-350
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		-30,
+		-130
+	],
+	"sing_duration": 4,
+	"scale": 0.5
+}

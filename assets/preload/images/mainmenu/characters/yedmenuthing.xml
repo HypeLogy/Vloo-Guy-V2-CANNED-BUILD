@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="yedmenuthing.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="yedmenuthing0000" x="10" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0001" x="10" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0002" x="10" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0003" x="10" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0004" x="10" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0005" x="518" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0006" x="518" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0007" x="518" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0008" x="518" y="10" width="498" height="610"/>
+	<SubTexture name="yedmenuthing0009" x="518" y="10" width="498" height="610"/>
+</TextureAtlas>

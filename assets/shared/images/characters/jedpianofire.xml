@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jedpianofire.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="jd0000" x="39" y="39" width="600" height="600"/>
+	<SubTexture name="jd0001" x="39" y="39" width="600" height="600"/>
+	<SubTexture name="jd0002" x="669" y="39" width="600" height="600"/>
+	<SubTexture name="jd0003" x="669" y="39" width="600" height="600"/>
+	<SubTexture name="jd0004" x="1299" y="39" width="600" height="600"/>
+	<SubTexture name="jd0005" x="1299" y="39" width="600" height="600"/>
+	<SubTexture name="jd0006" x="1929" y="39" width="600" height="600"/>
+	<SubTexture name="jd0007" x="1929" y="39" width="600" height="600"/>
+	<SubTexture name="jd0008" x="2559" y="39" width="600" height="600"/>
+	<SubTexture name="jd0009" x="2559" y="39" width="600" height="600"/>
+	<SubTexture name="jd0010" x="3189" y="39" width="600" height="600"/>
+	<SubTexture name="jd0011" x="3189" y="39" width="600" height="600"/>
+	<SubTexture name="ji0000" x="39" y="669" width="600" height="600"/>
+	<SubTexture name="ji0001" x="39" y="669" width="600" height="600"/>
+	<SubTexture name="ji0002" x="39" y="669" width="600" height="600"/>
+	<SubTexture name="ji0003" x="39" y="669" width="600" height="600"/>
+	<SubTexture name="ji0004" x="669" y="669" width="600" height="600"/>
+	<SubTexture name="ji0005" x="669" y="669" width="600" height="600"/>
+	<SubTexture name="ji0006" x="1299" y="669" width="600" height="600"/>
+	<SubTexture name="ji0007" x="1299" y="669" width="600" height="600"/>
+	<SubTexture name="ji0008" x="1929" y="669" width="600" height="600"/>
+	<SubTexture name="ji0009" x="1929" y="669" width="600" height="600"/>
+	<SubTexture name="ji0010" x="2559" y="669" width="600" height="600"/>
+	<SubTexture name="ji0011" x="2559" y="669" width="600" height="600"/>
+	<SubTexture name="ji0012" x="2559" y="669" width="600" height="600"/>
+	<SubTexture name="ji0013" x="2559" y="669" width="600" height="600"/>
+	<SubTexture name="jl0000" x="3189" y="669" width="600" height="600"/>
+	<SubTexture name="jl0001" x="3189" y="669" width="600" height="600"/>
+	<SubTexture name="jl0002" x="39" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0003" x="39" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0004" x="669" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0005" x="669" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0006" x="1299" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0007" x="1299" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0008" x="1929" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0009" x="1929" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0010" x="2559" y="1299" width="600" height="600"/>
+	<SubTexture name="jl0011" x="2559" y="1299" width="600" height="600"/>
+	<SubTexture name="jr0000" x="3189" y="1299" width="600" height="600"/>
+	<SubTexture name="jr0001" x="3189" y="1299" width="600" height="600"/>
+	<SubTexture name="jr0002" x="39" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0003" x="39" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0004" x="669" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0005" x="669" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0006" x="1299" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0007" x="1299" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0008" x="1929" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0009" x="1929" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0010" x="2559" y="1929" width="600" height="600"/>
+	<SubTexture name="jr0011" x="2559" y="1929" width="600" height="600"/>
+	<SubTexture name="ju0000" x="3189" y="1929" width="600" height="600"/>
+	<SubTexture name="ju0001" x="3189" y="1929" width="600" height="600"/>
+	<SubTexture name="ju0002" x="39" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0003" x="39" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0004" x="669" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0005" x="669" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0006" x="1299" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0007" x="1299" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0008" x="1929" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0009" x="1929" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0010" x="2559" y="2559" width="600" height="600"/>
+	<SubTexture name="ju0011" x="2559" y="2559" width="600" height="600"/>
+</TextureAtlas>

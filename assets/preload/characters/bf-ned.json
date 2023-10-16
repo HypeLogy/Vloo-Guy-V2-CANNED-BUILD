@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				480,
+				-160
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				478,
+				-162
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				462,
+				-160
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				467,
+				-153
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				491,
+				-150
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				456,
+				-159
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "dm",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				457,
+				-154
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "um",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				486,
+				-153
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "lm",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				492,
+				-160
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "rm",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/ned_the_second",
+	"position": [
+		380,
+		30
+	],
+	"healthicon": "neddy",
+	"flip_x": true,
+	"healthbar_colors": [
+		124,
+		55,
+		14
+	],
+	"camera_position": [
+		-400,
+		-543
+	],
+	"sing_duration": 6.1,
+	"scale": 2.8
+}

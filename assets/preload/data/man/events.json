@@ -1,0 +1,251 @@
+{
+	"song": {
+		"events": [
+			[
+				99468.75,
+				[
+					[
+						"Change Character",
+						"dad",
+						"gex"
+					]
+				]
+			],
+			[
+				100031.25,
+				[
+					[
+						"Lyrics_BF",
+						"hey...",
+						"mand"
+					],
+					[
+						"Play Animation",
+						"shithead",
+						"dad"
+					]
+				]
+			],
+			[
+				100406.25,
+				[
+					[
+						"Lyrics_BF",
+						"HEY",
+						"mand"
+					]
+				]
+			],
+			[
+				100781.25,
+				[
+					[
+						"Lyrics_BF",
+						"WHAT ARE YOU DOING",
+						"mand"
+					]
+				]
+			],
+			[
+				101531.25,
+				[
+					[
+						"Lyrics_BF",
+						"YOU SHITHEAD",
+						"mand"
+					]
+				]
+			],
+			[
+				102000,
+				[
+					[
+						"Lyrics_BF",
+						"",
+						""
+					]
+				]
+			],
+			[
+				104062.5,
+				[
+					[
+						"Play Animation",
+						"kys",
+						"dad"
+					],
+					[
+						"Lyrics_BF",
+						"no-",
+						"mand"
+					]
+				]
+			],
+			[
+				104531.25,
+				[
+					[
+						"Lyrics_BF",
+						"STOP TOUCHING THE MERCH",
+						"mand"
+					]
+				]
+			],
+			[
+				105187.5,
+				[
+					[
+						"Play Animation",
+						"screm",
+						"dad"
+					]
+				]
+			],
+			[
+				106875,
+				[
+					[
+						"Lyrics_BF",
+						"*screams of agony*",
+						"mand"
+					]
+				]
+			],
+			[
+				108375,
+				[
+					[
+						"Play Animation",
+						"collection1",
+						"dad"
+					],
+					[
+						"Lyrics_BF",
+						"no- thats no",
+						"mand"
+					]
+				]
+			],
+			[
+				109500,
+				[
+					[
+						"Play Animation",
+						"screm",
+						"dad"
+					]
+				]
+			],
+			[
+				109593.75,
+				[
+					[
+						"Lyrics_BF",
+						"THATS LIMITED COLLECTION",
+						"mand"
+					]
+				]
+			],
+			[
+				112687.5,
+				[
+					[
+						"Lyrics_BF",
+						"no- thats no",
+						"mand"
+					],
+					[
+						"Play Animation",
+						"collection2",
+						"dad"
+					]
+				]
+			],
+			[
+				114000,
+				[
+					[
+						"Lyrics_BF",
+						"THATS LIMITED COLLECTION",
+						"mand"
+					]
+				]
+			],
+			[
+				114003.90625,
+				[
+					[
+						"Play Animation",
+						"screm",
+						"dad"
+					]
+				]
+			],
+			[
+				116718.75,
+				[
+					[
+						"Lyrics_BF",
+						"",
+						""
+					]
+				]
+			],
+			[
+				117000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"mann"
+					]
+				]
+			],
+			[
+				120937.5,
+				[
+					[
+						"Lyrics_BF",
+						"yknow what?",
+						"mand"
+					]
+				]
+			],
+			[
+				121031.25,
+				[
+					[
+						"Change Character",
+						"dad",
+						"gex"
+					],
+					[
+						"Play Animation",
+						"fuck",
+						"dad"
+					]
+				]
+			],
+			[
+				121687.5,
+				[
+					[
+						"Lyrics_BF",
+						"FUCK you",
+						"mand"
+					]
+				]
+			],
+			[
+				122250,
+				[
+					[
+						"Lyrics_BF",
+						"YA PEICE OF SHI-",
+						"mand"
+					]
+				]
+			]
+		]
+	}
+}

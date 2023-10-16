@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-51,
+				-116
+			],
+			"anim": "ayo the pizza is here",
+			"fps": 24,
+			"name": "casset call",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-51,
+				-102
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "casset down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-51,
+				25
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "casset left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-52,
+				69
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "casset up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-51,
+				-21
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "casset rigth",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				-129
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "casset iddle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/henry",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "gf",
+	"flip_x": true,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

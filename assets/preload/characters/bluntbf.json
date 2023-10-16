@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-55,
+				-49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "i"
+		},
+		{
+			"offsets": [
+				-51,
+				-38
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "d"
+		},
+		{
+			"offsets": [
+				-52,
+				-68
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "u"
+		},
+		{
+			"offsets": [
+				27,
+				-51
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "l"
+		},
+		{
+			"offsets": [
+				-38,
+				-49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "r"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-34,
+				-68
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "miss u",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				-48
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "miss r",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-55,
+				-43
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "miss d",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-57,
+				-46
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "miss l",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/blunt_bf",
+	"position": [
+		-40,
+		250
+	],
+	"healthicon": "bfblunt",
+	"flip_x": true,
+	"healthbar_colors": [
+		131,
+		82,
+		183
+	],
+	"camera_position": [
+		210,
+		-250
+	],
+	"sing_duration": 4,
+	"scale": 1.5
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="logo vloo.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="logo vloo bumping0000" x="18" y="18" width="535" height="497" frameX="-56" frameY="-64" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0001" x="571" y="18" width="628" height="581" frameX="-21" frameY="-4" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0002" x="571" y="18" width="628" height="581" frameX="-21" frameY="-4" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0003" x="1217" y="18" width="565" height="519" frameX="-47" frameY="-42" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0004" x="1217" y="18" width="565" height="519" frameX="-47" frameY="-42" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0005" x="1800" y="18" width="549" height="503" frameX="-54" frameY="-54" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0006" x="1800" y="18" width="549" height="503" frameX="-54" frameY="-54" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0007" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0008" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0009" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0010" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0011" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0012" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0013" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0014" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0015" x="2931" y="18" width="502" height="464" frameX="-78" frameY="-73" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0016" x="18" y="617" width="639" height="593" frameX="0" frameY="0" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0017" x="18" y="617" width="639" height="593" frameX="0" frameY="0" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0018" x="675" y="617" width="583" height="540" frameX="-33" frameY="-32" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0019" x="675" y="617" width="583" height="540" frameX="-33" frameY="-32" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0020" x="1800" y="18" width="549" height="503" frameX="-54" frameY="-54" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0021" x="1800" y="18" width="549" height="503" frameX="-54" frameY="-54" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0022" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0023" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0024" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0025" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0026" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0027" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0028" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+	<SubTexture name="logo vloo bumping0029" x="2367" y="18" width="546" height="501" frameX="-56" frameY="-55" frameWidth="649" frameHeight="593"/>
+</TextureAtlas>

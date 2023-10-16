@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-53,
+				166
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "missup"
+		},
+		{
+			"offsets": [
+				-38,
+				140
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "missright"
+		},
+		{
+			"offsets": [
+				-50,
+				147
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "missdown"
+		},
+		{
+			"offsets": [
+				-60,
+				141
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "missleft"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-54,
+				141
+			],
+			"anim": "idle",
+			"fps": 10,
+			"name": "Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-54,
+				137
+			],
+			"anim": "singDOWN",
+			"fps": 10,
+			"name": "Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-58,
+				139
+			],
+			"anim": "singUP",
+			"fps": 10,
+			"name": "Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-51,
+				143
+			],
+			"anim": "singRIGHT",
+			"fps": 10,
+			"name": "Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				140
+			],
+			"anim": "singLEFT",
+			"fps": 10,
+			"name": "Left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/MidnightBFGuitar",
+	"position": [
+		-130,
+		320
+	],
+	"healthicon": "bfourple",
+	"flip_x": true,
+	"healthbar_colors": [
+		131,
+		82,
+		183
+	],
+	"camera_position": [
+		220,
+		-150
+	],
+	"sing_duration": 4,
+	"scale": 1.5
+}

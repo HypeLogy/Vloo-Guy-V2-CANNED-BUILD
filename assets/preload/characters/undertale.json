@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				25,
+				-148
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				62,
+				169
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				144,
+				17
+			],
+			"anim": "singLEFT",
+			"fps": 20,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				-1
+			],
+			"anim": "singRIGHT",
+			"fps": 20,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/fox",
+	"position": [
+		390,
+		580
+	],
+	"healthicon": "icon-tobias",
+	"flip_x": false,
+	"healthbar_colors": [
+		216,
+		216,
+		216
+	],
+	"camera_position": [
+		10,
+		80
+	],
+	"sing_duration": 6.1,
+	"scale": 0.9
+}

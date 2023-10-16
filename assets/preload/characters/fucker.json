@@ -1,0 +1,111 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				165,
+				140
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "fucker idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				165,
+				140
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "fucker left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				165,
+				140
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "fucker down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				165,
+				140
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "fucked up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				165,
+				140
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "fucker right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				166,
+				139
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "fucked miss all",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				186,
+				119
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "fucked miss all",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				186,
+				119
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "fucked miss all",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/fucker",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bfsloo",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		30,
+		-450
+	],
+	"sing_duration": 4,
+	"scale": 2
+}

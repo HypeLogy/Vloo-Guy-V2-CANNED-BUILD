@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				72,
+				207
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				99,
+				-159
+			],
+			"loop": false,
+			"fps": 16,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				253,
+				113
+			],
+			"anim": "singLEFT",
+			"fps": 16,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-54,
+				10
+			],
+			"anim": "singRIGHT",
+			"fps": 16,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/cawthon",
+	"position": [
+		840,
+		470
+	],
+	"healthicon": "icon-scott",
+	"flip_x": true,
+	"healthbar_colors": [
+		136,
+		190,
+		206
+	],
+	"camera_position": [
+		130,
+		80
+	],
+	"sing_duration": 6.1,
+	"scale": 0.9
+}

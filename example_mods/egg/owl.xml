@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="owl.png">
+<SubTexture name="owl idle0000" x="0" y="0" width="321" height="331" frameX="0" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0001" x="0" y="0" width="321" height="331" frameX="0" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0002" x="321" y="0" width="320" height="331" frameX="-1" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0003" x="321" y="0" width="320" height="331" frameX="-1" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0004" x="641" y="0" width="316" height="331" frameX="-5" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0005" x="641" y="0" width="316" height="331" frameX="-5" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0006" x="0" y="331" width="312" height="331" frameX="-9" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0007" x="0" y="331" width="312" height="331" frameX="-9" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0008" x="312" y="331" width="311" height="331" frameX="-10" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0009" x="312" y="331" width="311" height="331" frameX="-10" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0010" x="623" y="331" width="310" height="331" frameX="-11" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0011" x="623" y="331" width="310" height="331" frameX="-11" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0012" x="623" y="331" width="310" height="331" frameX="-11" frameY="0" frameWidth="321" frameHeight="331" />
+<SubTexture name="owl idle0013" x="623" y="331" width="310" height="331" frameX="-11" frameY="0" frameWidth="321" frameHeight="331" />
+</TextureAtlas>
