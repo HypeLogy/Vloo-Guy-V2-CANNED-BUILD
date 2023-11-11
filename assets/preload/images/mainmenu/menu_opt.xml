@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="opt.png">
-<SubTexture name="opt opt0000" x="0" y="0" width="274" height="217" frameX="0" frameY="0" frameWidth="272" frameHeight="215" />
-<SubTexture name="opt opt0001" x="0" y="0" width="274" height="217" frameX="0" frameY="0" frameWidth="272" frameHeight="215" />
-<SubTexture name="opt opt0002" x="0" y="0" width="274" height="217" frameX="0" frameY="0" frameWidth="272" frameHeight="215" />
-<SubTexture name="opt opt0003" x="274" y="0" width="274" height="217" frameX="0" frameY="0" frameWidth="272" frameHeight="215" />
-<SubTexture name="opt opt0004" x="274" y="0" width="274" height="217" frameX="0" frameY="0" frameWidth="272" frameHeight="215" />
-<SubTexture name="opt opt0005" x="274" y="0" width="274" height="217" frameX="0" frameY="0" frameWidth="272" frameHeight="215" />
-</TextureAtlas>

@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="cred.png">
-<SubTexture name="cred cred0000" x="0" y="0" width="282" height="204" frameX="0" frameY="0" frameWidth="280" frameHeight="202" />
-<SubTexture name="cred cred0001" x="0" y="0" width="282" height="204" frameX="0" frameY="0" frameWidth="280" frameHeight="202" />
-<SubTexture name="cred cred0002" x="0" y="0" width="282" height="204" frameX="0" frameY="0" frameWidth="280" frameHeight="202" />
-<SubTexture name="cred cred0003" x="282" y="0" width="282" height="204" frameX="0" frameY="0" frameWidth="280" frameHeight="202" />
-<SubTexture name="cred cred0004" x="282" y="0" width="282" height="204" frameX="0" frameY="0" frameWidth="280" frameHeight="202" />
-<SubTexture name="cred cred0005" x="282" y="0" width="282" height="204" frameX="0" frameY="0" frameWidth="280" frameHeight="202" />
-</TextureAtlas>
