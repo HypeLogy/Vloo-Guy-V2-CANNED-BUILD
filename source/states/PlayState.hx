@@ -261,6 +261,12 @@ class PlayState extends MusicBeatState
 	public var startCallback:Void->Void = null;
 	public var endCallback:Void->Void = null;
 
+
+
+	public var iconTrays:Array<FlxSprite> = [];
+
+
+
 	override public function create()
 	{
 		//trace('Playback Rate: ' + playbackRate);
@@ -523,7 +529,9 @@ class PlayState extends MusicBeatState
 		FlxG.worldBounds.set(0, 0, FlxG.width, FlxG.height);
 		moveCameraSection();
 
-		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : 0.11), 'healthBar', function() return health, 0, 2);
+
+
+		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : 0.11), 'ui/hpbar', function() return health, 0, 2,true);
 		healthBar.screenCenter(X);
 		healthBar.leftToRight = false;
 		healthBar.scrollFactor.set();
@@ -532,17 +540,25 @@ class PlayState extends MusicBeatState
 		reloadHealthBarColors();
 		uiGroup.add(healthBar);
 
+		var iconTrayP1 = new FlxSprite().loadGraphic(Paths.image('ui/hpbar1'));
+		iconTrayP1.flipX = true;
+		var iconTrayP2 = new FlxSprite().loadGraphic(Paths.image('ui/hpbar1'));
+		uiGroup.add(iconTrayP1);
+		uiGroup.add(iconTrayP2);
+
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
-		iconP1.y = healthBar.y - 75;
+		iconP1.setPosition(healthBar.x + healthBar.width + 10,healthBar.y - 75);
 		iconP1.visible = !ClientPrefs.data.hideHud;
 		iconP1.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP1);
+		iconTrayP1.setPosition(iconP1.x,healthBar.y - 50);
 
 		iconP2 = new HealthIcon(dad.healthIcon, false);
-		iconP2.y = healthBar.y - 75;
+		iconP2.setPosition(healthBar.x - iconP2.width - 10,healthBar.y - 75);
 		iconP2.visible = !ClientPrefs.data.hideHud;
 		iconP2.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP2);
+		iconTrayP2.setPosition(iconP2.x,healthBar.y - 50);
 
 		scoreTxt = new FlxText(0, healthBar.y + 40, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -1638,8 +1654,8 @@ class PlayState extends MusicBeatState
 			// Old system for safety?? idk
 			if (health > 2) health = 2;
 		}
-		iconP1.x = healthBar.barCenter + (150 * iconP1.scale.x - 150) / 2 - iconOffset;
-		iconP2.x = healthBar.barCenter - (150 * iconP2.scale.x) / 2 - iconOffset * 2;
+		// iconP1.x = healthBar.barCenter + (150 * iconP1.scale.x - 150) / 2 - iconOffset;
+		// iconP2.x = healthBar.barCenter - (150 * iconP2.scale.x) / 2 - iconOffset * 2;
 		iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
 		iconP2.animation.curAnim.curFrame = (healthBar.percent > 80) ? 1 : 0;
 

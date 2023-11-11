@@ -1,9 +1,12 @@
-package openfl.display;
+package backend;
 
+import openfl.Memory;
 import haxe.Timer;
 import openfl.events.Event;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
+import flixel.math.FlxMath;
+import flixel.FlxG;
 #if gl_stats
 import openfl.display._internal.stats.Context3DStats;
 import openfl.display._internal.stats.DrawCallContext;
@@ -24,21 +27,18 @@ import openfl.system.System;
 @:fileXml('tags="haxe,release"')
 @:noDebug
 #end
-class FPS extends TextField
+class FPSCounter extends TextField
 {
 	/**
 		The current frame rate, expressed using frames-per-second
 	**/
 	public var currentFPS(default, null):Int;
 
-	/**
-		The current memory usage.
-	**/
-	public var memoryMegas:Float = 0;
-
 	@:noCompletion private var cacheCount:Int;
 	@:noCompletion private var currentTime:Float;
 	@:noCompletion private var times:Array<Float>;
+	@:noCompletion private var memPeak:Float;
+
 
 	public function new(x:Float = 10, y:Float = 10, color:Int = 0x000000)
 	{
@@ -59,6 +59,11 @@ class FPS extends TextField
 		currentTime = 0;
 		times = [];
 
+		#if openfl
+		FlxG.signals.postStateSwitch.add(reset);
+		memPeak = 0;
+		#end
+
 		#if flash
 		addEventListener(Event.ENTER_FRAME, function(e)
 		{
@@ -68,21 +73,17 @@ class FPS extends TextField
 		#end
 	}
 
-	var deltaTimeout:Float = 0.0;
-
 	// Event Handlers
 	@:noCompletion
 	private #if !flash override #end function __enterFrame(deltaTime:Float):Void
 	{
-		if (deltaTimeout > 1000) {
-			// there's no need to update this every frame and it only causes performance losses.
-			deltaTimeout = 0.0;
-			return;
-		}
 		currentTime += deltaTime;
 		times.push(currentTime);
+
 		while (times[0] < currentTime - 1000)
+		{
 			times.shift();
+		}
 
 		var currentCount = times.length;
 		currentFPS = Math.round((currentCount + cacheCount) / 2);
@@ -90,16 +91,21 @@ class FPS extends TextField
 
 		if (currentCount != cacheCount /*&& visible*/)
 		{
-			text = 'FPS: ${currentFPS}';
+			text = "FPS: " + currentFPS;
+			var memoryMegas:Float = 0;
+
 			
 			#if openfl
-			memoryMegas = cast(System.totalMemory, UInt);
-			text += '\nMemory: ${flixel.util.FlxStringUtil.formatBytes(memoryMegas)}';
+			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
+			if (memoryMegas > memPeak) memPeak = memoryMegas;
+			text += "\nMemory: " + memoryMegas + ' / Peak: ' + memPeak + " MB";
 			#end
 
 			textColor = 0xFFFFFFFF;
-			if (currentFPS <= ClientPrefs.data.framerate / 2)
+			if (memoryMegas > 3000 || currentFPS <= ClientPrefs.data.framerate / 2)
+			{
 				textColor = 0xFFFF0000;
+			}
 
 			#if (gl_stats && !disable_cffi && (!html5 || !canvas))
 			text += "\ntotalDC: " + Context3DStats.totalDrawCalls();
@@ -111,6 +117,12 @@ class FPS extends TextField
 		}
 
 		cacheCount = currentCount;
-		deltaTimeout += deltaTime;
 	}
+
+	#if openfl
+	private function reset():Void
+	{
+		memPeak = 0;
+	}
+	#end
 }
