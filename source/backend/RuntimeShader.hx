@@ -1,6 +1,22 @@
 package backend;
 
+
+
+import psychlua.LuaUtils;
+#if (FLX_DRAW_QUADS && !flash)
+import flixel.graphics.tile.FlxGraphicsShader;
+
+
+#if lime
+import lime.utils.Float32Array;
+#end
+import openfl.display.BitmapData;
+import openfl.display.ShaderInput;
+import openfl.display.ShaderParameter;
+import openfl.display.ShaderParameterType;
 import flixel.addons.display.FlxRuntimeShader;
+
+using StringTools;
 
 class RuntimeShader extends FlxRuntimeShader
 {
@@ -9,7 +25,7 @@ class RuntimeShader extends FlxRuntimeShader
     
 	public var tag:String = '';
 
-	var curClass:String = Type.getClassName(Type.getClass(MusicBeatState.currentState)); //i tried doing curclass is playstate but it wouldnt work? so ig a string
+	//var curClass:String = Type.getClassName(Type.getClass(MusicBeatState.currentState)); //i tried doing curclass is playstate but it wouldnt work? so ig a string
 	
 	private var tweenMap:Map<String, FlxTween> = new Map();
 	/**
@@ -35,22 +51,22 @@ class RuntimeShader extends FlxRuntimeShader
 		}
 
 
-		if (curClass == 'PlayState') {
-			tweenMap.set(name,PlayState.instance.eventTweens.num(getFloat(name),toValue,time, {ease: FunkinLua.getFlxEaseByString(ease), onComplete: function (t:FlxTween) {
+		// if (curClass == 'PlayState') {
+		// 	tweenMap.set(name,PlayState.instance.eventTweens.num(getFloat(name),toValue,time, {ease: FunkinLua.getFlxEaseByString(ease), onComplete: function (t:FlxTween) {
+		// 		tweenMap.remove(name);
+		// 	}}, function (f) {
+		// 		setFloat(name,f);
+		// 	})
+		// 	);
+		// }
+		// else {
+			tweenMap.set(name,FlxTween.num(getFloat(name),toValue,time, {ease: LuaUtils.getTweenEaseByString(ease), onComplete: function (t:FlxTween) {
 				tweenMap.remove(name);
 			}}, function (f) {
 				setFloat(name,f);
 			})
 			);
-		}
-		else {
-			tweenMap.set(name,FlxTween.num(getFloat(name),toValue,time, {ease: FunkinLua.getFlxEaseByString(ease), onComplete: function (t:FlxTween) {
-				tweenMap.remove(name);
-			}}, function (f) {
-				setFloat(name,f);
-			})
-			);
-		}
+		//}
 
 
 	}
@@ -85,3 +101,4 @@ class RuntimeShader extends FlxRuntimeShader
 
 
 }
+#end

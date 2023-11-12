@@ -43,10 +43,6 @@ import states.editors.CharacterEditorState;
 import substates.PauseSubState;
 import substates.GameOverSubstate;
 
-#if !flash 
-import flixel.addons.display.FlxRuntimeShader;
-import openfl.filters.ShaderFilter;
-#end
 
 #if VIDEOS_ALLOWED 
 #if (hxCodec >= "3.0.0") import hxcodec.flixel.FlxVideo as VideoHandler;

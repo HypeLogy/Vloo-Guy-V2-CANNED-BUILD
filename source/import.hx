@@ -43,6 +43,14 @@ import states.LoadingState;
 import flxanimate.*;
 #end
 
+#if (!flash && sys)
+import backend.RuntimeShader as FlxRuntimeShader;
+#end
+
+#if !flash
+import openfl.filters.ShaderFilter;
+#end
+
 
 import flixel.sound.FlxSound;
 import flixel.FlxG;
