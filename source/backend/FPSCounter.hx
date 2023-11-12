@@ -96,7 +96,7 @@ class FPSCounter extends TextField
 
 			
 			#if openfl
-			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
+			memoryMegas = FlxMath.roundDecimal(System.totalMemory / 1000000, 1);
 			if (memoryMegas > memPeak) memPeak = memoryMegas;
 			text += "\nMemory: " + memoryMegas + ' / Peak: ' + memPeak + " MB";
 			#end

@@ -543,18 +543,18 @@ class PlayState extends MusicBeatState
 		uiGroup.add(iconTrayP2);
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
-		iconP1.setPosition(healthBar.x + healthBar.width + 10,healthBar.y - 75);
+		iconP1.setPosition(healthBar.x + healthBar.width - 10,healthBar.y - 75);
 		iconP1.visible = !ClientPrefs.data.hideHud;
 		iconP1.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP1);
-		iconTrayP1.setPosition(iconP1.x,healthBar.y - 50);
+		iconTrayP1.setPosition(iconP1.x + 30,healthBar.y - 50);
 
 		iconP2 = new HealthIcon(dad.healthIcon, false);
-		iconP2.setPosition(healthBar.x - iconP2.width - 10,healthBar.y - 75);
+		iconP2.setPosition(healthBar.x - iconP2.width + 10,healthBar.y - 75);
 		iconP2.visible = !ClientPrefs.data.hideHud;
 		iconP2.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP2);
-		iconTrayP2.setPosition(iconP2.x,healthBar.y - 50);
+		iconTrayP2.setPosition(iconP2.x - 30,healthBar.y - 50);
 
 		scoreTxt = new FlxText(0, healthBar.y + 40, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
