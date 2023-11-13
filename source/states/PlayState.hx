@@ -10,6 +10,7 @@ package states;
 // "function eventEarlyTrigger" - Used for making your event start a few MILLISECONDS earlier
 // "function triggerEvent" - Called when the song hits your event's timestamp, this is probably what you were looking for
 
+import flixel.system.FlxAssets.FlxShader;
 import backend.Highscore;
 import backend.StageData;
 import backend.WeekData;
@@ -258,8 +259,19 @@ class PlayState extends MusicBeatState
 	public var endCallback:Void->Void = null;
 
 
+	//extra camera junk
+	public var beatsPerZoom:Int = 4;
+	public var charCamZoomMult:Float = 1;
+	public var camOffset:Float = 15;
+	public var forcedCharFocus:Null<Character> = null;
+	public var defaultHUDZoom:Float = 1;
 
-	public var iconTrays:Array<FlxSprite> = [];
+	//use these instead of FlxTween if u want them to pause when u pause
+	public var playStateTween:FlxTweenManager = new FlxTweenManager();
+	public var playStateTimer:FlxTimerManager = new FlxTimerManager();
+
+	public var eventTweensHandler:Map<String, FlxTween> = new Map<String, FlxTween>();
+
 
 
 
@@ -536,9 +548,9 @@ class PlayState extends MusicBeatState
 		reloadHealthBarColors();
 		uiGroup.add(healthBar);
 
-		var iconTrayP1 = new FlxSprite().loadGraphic(Paths.image('ui/hpbar1'));
+		var iconTrayP1 = new AttachedSprite('ui/hpbar1');
 		iconTrayP1.flipX = true;
-		var iconTrayP2 = new FlxSprite().loadGraphic(Paths.image('ui/hpbar1'));
+		var iconTrayP2 = new AttachedSprite('ui/hpbar1');
 		uiGroup.add(iconTrayP1);
 		uiGroup.add(iconTrayP2);
 
@@ -547,14 +559,18 @@ class PlayState extends MusicBeatState
 		iconP1.visible = !ClientPrefs.data.hideHud;
 		iconP1.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP1);
-		iconTrayP1.setPosition(iconP1.x + 30,healthBar.y - 50);
+		iconTrayP1.sprTracker = iconP1;
+		iconTrayP1.xAdd = 30;
+		iconTrayP1.yAdd = 25;
 
 		iconP2 = new HealthIcon(dad.healthIcon, false);
 		iconP2.setPosition(healthBar.x - iconP2.width + 10,healthBar.y - 75);
 		iconP2.visible = !ClientPrefs.data.hideHud;
 		iconP2.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP2);
-		iconTrayP2.setPosition(iconP2.x - 30,healthBar.y - 50);
+		iconTrayP2.sprTracker = iconP2;
+		iconTrayP2.xAdd = -30;
+		iconTrayP2.yAdd = 25;
 
 		scoreTxt = new FlxText(0, healthBar.y + 40, FlxG.width, "", 20);
 		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -1495,6 +1511,9 @@ class PlayState extends MusicBeatState
 				vocals.pause();
 			}
 
+			playStateTween.active = false;
+			playStateTimer.active = false;
+
 			if (startTimer != null && !startTimer.finished) startTimer.active = false;
 			if (finishTimer != null && !finishTimer.finished) finishTimer.active = false;
 			if (songSpeedTween != null) songSpeedTween.active = false;
@@ -1522,6 +1541,9 @@ class PlayState extends MusicBeatState
 			{
 				resyncVocals();
 			}
+
+			playStateTween.active = true;
+			playStateTimer.active = true;
 
 			if (startTimer != null && !startTimer.finished) startTimer.active = true;
 			if (finishTimer != null && !finishTimer.finished) finishTimer.active = true;
@@ -1595,11 +1617,12 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
-		/*if (FlxG.keys.justPressed.NINE)
-		{
-			iconP1.swapOldIcon();
-		}*/
 		callOnScripts('onUpdate', [elapsed]);
+
+		playStateTween.update(elapsed);
+		playStateTimer.update(elapsed);
+
+		if (generatedMusic && !endingSong && !isCameraOnForcedPos) moveCameraSection();
 
 		FlxG.camera.followLerp = 0;
 		if(!inCutscene && !paused) {
@@ -1685,8 +1708,8 @@ class PlayState extends MusicBeatState
 
 		if (camZooming)
 		{
-			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, FlxMath.bound(1 - (elapsed * 3.125 * camZoomingDecay * playbackRate), 0, 1));
-			camHUD.zoom = FlxMath.lerp(1, camHUD.zoom, FlxMath.bound(1 - (elapsed * 3.125 * camZoomingDecay * playbackRate), 0, 1));
+			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom * charCamZoomMult, FlxG.camera.zoom, FlxMath.bound(1 - (elapsed * 3.125 * camZoomingDecay * playbackRate), 0, 1));
+			camHUD.zoom = FlxMath.lerp(defaultHUDZoom, camHUD.zoom, FlxMath.bound(1 - (elapsed * 3.125 * camZoomingDecay * playbackRate), 0, 1));
 		}
 
 		FlxG.watch.addQuick("secShit", curSection);
@@ -2169,16 +2192,50 @@ class PlayState extends MusicBeatState
 	var cameraTwn:FlxTween;
 	public function moveCamera(isDad:Bool)
 	{
+		var boyfriendCamDisplace:Array<Float> = [0,0];
+		var dadCamDisplace:Array<Float> = [0,0];
+		var offsets:Array<Float> = [0,0];
+
+		if (forcedCharFocus == dad) isDad = true;
+		if (forcedCharFocus == boyfriend) isDad = false;
+
+		var char = isDad ? dad : boyfriend;
+		switch (char.animation.curAnim.name.substring(4)) {
+			case 'UP' | 'UP-alt':
+				offsets = [0,-camOffset];
+			case 'DOWN' | 'DOWN-alt':
+				offsets = [0,camOffset];
+			case 'LEFT' | 'LEFT-alt':
+				offsets = [-camOffset,0];
+			case 'RIGHT' | 'RIGHT-alt':
+				offsets = [camOffset,0];
+		}
+		if (forcedCharFocus != null) {
+			if (char == dad) {
+				boyfriendCamDisplace = [0,0];
+				dadCamDisplace = offsets;
+			}
+			else if (char == boyfriend){
+				boyfriendCamDisplace = offsets;
+				dadCamDisplace = [0,0];
+			}
+		}
+		else 
+		{
+			if (!isDad) boyfriendCamDisplace = offsets;
+			else dadCamDisplace = offsets;
+		}
+		
 		if(isDad)
 		{
-			camFollow.setPosition(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
+			camFollow.setPosition(dad.getMidpoint().x + 150 + dadCamDisplace[0], dad.getMidpoint().y - 100 + dadCamDisplace[1]);
 			camFollow.x += dad.cameraPosition[0] + opponentCameraOffset[0];
 			camFollow.y += dad.cameraPosition[1] + opponentCameraOffset[1];
 			tweenCamIn();
 		}
 		else
 		{
-			camFollow.setPosition(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
+			camFollow.setPosition(boyfriend.getMidpoint().x - 100 + boyfriendCamDisplace[0], boyfriend.getMidpoint().y - 100 + boyfriendCamDisplace[1]);
 			camFollow.x -= boyfriend.cameraPosition[0] - boyfriendCameraOffset[0];
 			camFollow.y += boyfriend.cameraPosition[1] + boyfriendCameraOffset[1];
 
@@ -3037,6 +3094,13 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
+		if (beatsPerZoom <= 0 ) beatsPerZoom = 200;
+		if (camZooming && ClientPrefs.data.camZooms && curBeat % beatsPerZoom == 0)
+		{
+			FlxG.camera.zoom += 0.015 * camZoomingMult;
+			camHUD.zoom += 0.03 * camZoomingMult;
+		}
+
 		if (generatedMusic)
 			notes.sort(FlxSort.byY, ClientPrefs.data.downScroll ? FlxSort.ASCENDING : FlxSort.DESCENDING);
 
@@ -3051,6 +3115,7 @@ class PlayState extends MusicBeatState
 		super.beatHit();
 		lastBeatHit = curBeat;
 
+		
 		setOnScripts('curBeat', curBeat);
 		callOnScripts('onBeatHit');
 	}
@@ -3074,13 +3139,13 @@ class PlayState extends MusicBeatState
 		if (SONG.notes[curSection] != null)
 		{
 			if (generatedMusic && !endingSong && !isCameraOnForcedPos)
-				moveCameraSection();
+				//moveCameraSection();
 
-			if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)
-			{
-				FlxG.camera.zoom += 0.015 * camZoomingMult;
-				camHUD.zoom += 0.03 * camZoomingMult;
-			}
+			// if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)
+			// {
+			// 	FlxG.camera.zoom += 0.015 * camZoomingMult;
+			// 	camHUD.zoom += 0.03 * camZoomingMult;
+			// }
 
 			if (SONG.notes[curSection].changeBPM)
 			{
@@ -3511,4 +3576,57 @@ class PlayState extends MusicBeatState
 		return false;
 	}
 	#end
+
+
+	//WIP
+	var cameraShaderMap:Map<String, FlxShader> = new Map();
+	public function addShader(shaderTag:String, shader:Dynamic, ?camera:FlxCamera = null) 
+	{
+		if (cameraShaderMap.exists(shaderTag)) {
+			trace('shaderTag Exists! please make a new tag');
+			return;
+		}
+		if (camera == null) camera = camGame; 
+
+		if (shader is FlxRuntimeShader) {
+			shader.tag = shaderTag;
+		}
+
+		cameraShaderMap.set(shaderTag,shader);
+
+		if (camera.filters == null) camera.filters = [];
+		camera.filters.push(new ShaderFilter(cameraShaderMap.get(shaderTag)));
+	}
+
+	public function removeShader(shaderTag:String, ?camera:FlxCamera = null):Bool
+	{
+		if (camera == null) camera = camGame;
+		for (i in camera.filters) {
+			if (i is ShaderFilter) //this might be a little unnecessary but it works so its ok
+			{
+				var sf = cast(i, ShaderFilter);
+
+				if (sf.shader is FlxRuntimeShader) 
+				{
+					var shader = cast (sf.shader,FlxRuntimeShader);
+					if (shader.tag == shaderTag) {
+						trace('removed runtimeShader!');
+						camera.filters.remove(i);
+						return true;
+					}
+				}
+				else {
+					if (sf.shader == cameraShaderMap.get(shaderTag))  
+					{
+						trace('removed shader!');
+						camera.filters.remove(i);
+						return true;
+					}
+				}
+
+			}
+		}
+		return false;
+	}
+
 }

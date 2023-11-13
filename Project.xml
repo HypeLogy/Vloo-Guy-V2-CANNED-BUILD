@@ -76,6 +76,7 @@
 	<library name="songs"         preload="true" />
 	<library name="week_assets"   preload="true" />
 
+
 	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
 
 	<section if="MODS_ALLOWED">

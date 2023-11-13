@@ -140,4 +140,31 @@ class CoolUtil
 			+ '/'
 			+ FlxSave.validate(FlxG.stage.application.meta.get('file')) #end;
 	}
+
+	public static function fragToString(frag:String = '', library:String = ''):String {
+
+		var path:String = Paths.shaderFragment(frag);
+		if(FileSystem.exists(path)) {
+			path = File.getContent(path);
+		}
+		return path;
+	}
+
+	public static function initializeShader(shader:String,?updateiTime:Bool = false):FlxRuntimeShader 
+	{
+		if (!ClientPrefs.data.shaders) return new FlxRuntimeShader(); 
+		else {
+			var fragment = CoolUtil.fragToString(shader);
+			if (!fragment.contains('#pragma')) { 
+				trace('invalid shader Fragment! "$fragment"');
+				FlxG.log.error('invalid shader Fragment! "$fragment"');
+				return new FlxRuntimeShader();
+			}
+			else {
+				var newShader = new FlxRuntimeShader(CoolUtil.fragToString(shader));
+				if (updateiTime) newShader.updateiTime = true;
+				return newShader;
+			}
+		}
+	}
 }

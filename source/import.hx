@@ -44,7 +44,7 @@ import flxanimate.*;
 #end
 
 #if (!flash && sys)
-import backend.RuntimeShader as FlxRuntimeShader;
+import backend.RuntimeShader as FlxRuntimeShader; //better runtimeshader
 #end
 
 #if !flash

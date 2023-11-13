@@ -141,6 +141,7 @@ class TitleState extends MusicBeatState
 				FlxG.fullscreen = FlxG.save.data.fullscreen;
 				//trace('LOADED FULLSCREEN SETTING!!');
 			}
+			FlxG.signals.preStateSwitch.add(MusicBeatState.clearShaderData);
 			persistentUpdate = true;
 			persistentDraw = true;
 		}
