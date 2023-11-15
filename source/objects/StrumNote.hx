@@ -23,10 +23,14 @@ class StrumNote extends FlxSprite
 	}
 
 	public var useRGBShader:Bool = true;
+
+	private var animOffset:Map<String, Array<Float>> = new Map();
+
 	public function new(x:Float, y:Float, leData:Int, player:Int) {
 		rgbShader = new RGBShaderReference(this, Note.initializeGlobalRGBShader(leData));
 		rgbShader.enabled = false;
 		if(PlayState.SONG != null && PlayState.SONG.disableNoteRGB) useRGBShader = false;
+		if (ClientPrefs.data.noteSkin == 'vloo') useRGBShader = false;
 		
 		var arr:Array<FlxColor> = ClientPrefs.data.arrowRGB[leData];
 		if(PlayState.isPixelStage) arr = ClientPrefs.data.arrowRGBPixel[leData];
@@ -103,28 +107,50 @@ class StrumNote extends FlxSprite
 			animation.addByPrefix('blue', 'arrowDOWN');
 			animation.addByPrefix('purple', 'arrowLEFT');
 			animation.addByPrefix('red', 'arrowRIGHT');
-
+			
 			antialiasing = ClientPrefs.data.antialiasing;
+			if (ClientPrefs.data.noteSkin == 'vloo') antialiasing = false;
+			
 			setGraphicSize(Std.int(width * 0.7));
 
 			switch (Math.abs(noteData) % 4)
 			{
-				case 0:
+				case 0: //left
 					animation.addByPrefix('static', 'arrowLEFT');
 					animation.addByPrefix('pressed', 'left press', 24, false);
 					animation.addByPrefix('confirm', 'left confirm', 24, false);
-				case 1:
+					if (ClientPrefs.data.noteSkin == 'vloo') 
+					{
+						addOffset('pressed',5,-1);
+						addOffset('confirm',4);
+					}
+				case 1: //down
 					animation.addByPrefix('static', 'arrowDOWN');
 					animation.addByPrefix('pressed', 'down press', 24, false);
 					animation.addByPrefix('confirm', 'down confirm', 24, false);
-				case 2:
+					if (ClientPrefs.data.noteSkin == 'vloo') 
+					{
+						addOffset('pressed',7,-8);
+						addOffset('confirm',-1,-8);
+					}
+				case 2: //up
 					animation.addByPrefix('static', 'arrowUP');
 					animation.addByPrefix('pressed', 'up press', 24, false);
 					animation.addByPrefix('confirm', 'up confirm', 24, false);
-				case 3:
+					if (ClientPrefs.data.noteSkin == 'vloo') 
+					{
+						addOffset('pressed',-6,-10);
+						addOffset('confirm',-4,-10);
+					}
+				case 3: //right
 					animation.addByPrefix('static', 'arrowRIGHT');
 					animation.addByPrefix('pressed', 'right press', 24, false);
 					animation.addByPrefix('confirm', 'right confirm', 24, false);
+					if (ClientPrefs.data.noteSkin == 'vloo') 
+					{
+						addOffset('pressed',-3);
+						addOffset('confirm',-7);
+					}
 			}
 		}
 		updateHitbox();
@@ -159,8 +185,14 @@ class StrumNote extends FlxSprite
 		if(animation.curAnim != null)
 		{
 			centerOffsets();
+			if (animOffset.exists(anim)) offset.set(offset.x + animOffset.get(anim)[0], offset.y + animOffset.get(anim)[1]);
 			centerOrigin();
 		}
 		if(useRGBShader) rgbShader.enabled = (animation.curAnim != null && animation.curAnim.name != 'static');
+	}
+
+	public function addOffset(name:String, x:Float = 0, y:Float = 0)
+	{
+		animOffset[name] = [x, y];
 	}
 }

@@ -18,11 +18,14 @@ import flixel.addons.display.FlxRuntimeShader;
 
 using StringTools;
 
+//WIP next thing to do is add tween options
 class RuntimeShader extends FlxRuntimeShader
 {
 
 
     var curClass:String = Type.getClassName(Type.getClass(MusicBeatState.currentState)); 
+	var curState:Dynamic;
+	
 	
 	public var tag:String = '';
 
@@ -37,7 +40,7 @@ class RuntimeShader extends FlxRuntimeShader
 	 */
 	public function tweenFloat(name:String, toValue:Float, time:Float, ease:String = ''):Void
 	{
-		//todo make this like actually good
+	
 		var prop:ShaderParameter<Float> = Reflect.field(this.data, name);
 		
 		if (prop == null)
@@ -56,12 +59,13 @@ class RuntimeShader extends FlxRuntimeShader
 			tweenMap.remove(name);
 		}
 
-
-		//weird as fuck way to go about it but it works lol?
-		if (curClass.contains('.')) curClass = curClass.split('.').pop();
-		if (curClass == 'PlayState') 
+		curState = Type.resolveClass(curClass);
+		//basically a thing to check if the current state its being used in has instancetween. basically is a tweenmanager that
+		//is tied to whatever the state has setup
+		//so in this case PlayState instanceTween is set to pause whenever u pause
+		if (curState.instance.instanceTween != null) 
 		{
-			tweenMap.set(name,PlayState.instance.playStateTween.num(getFloat(name),toValue,time, {ease: LuaUtils.getTweenEaseByString(ease), onComplete: function (t:FlxTween) {
+			tweenMap.set(name,curState.instance.instanceTween.num(getFloat(name),toValue,time, {ease: LuaUtils.getTweenEaseByString(ease), onComplete: function (t:FlxTween) {
 				tweenMap.remove(name);
 			}}, function (f) {
 				setFloat(name,f);
@@ -84,7 +88,7 @@ class RuntimeShader extends FlxRuntimeShader
 	public var updateiTime(default,set):Bool = false;
 	private var iTimeIndex:Int = -1;
 
-	private function set_updateiTime(value:Bool):Bool //data todo make itime removable
+	private function set_updateiTime(value:Bool):Bool //data todo make this better
 	{
 		if (value && ClientPrefs.data.shaders) {
 			iTimeIndex = MusicBeatState.updateItime.push(this);

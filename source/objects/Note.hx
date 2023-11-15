@@ -205,6 +205,7 @@ class Note extends FlxSprite
 		super();
 
 		antialiasing = ClientPrefs.data.antialiasing;
+		if (ClientPrefs.data.noteSkin == 'vloo') antialiasing = false;
 		if(createdFrom == null) createdFrom = PlayState.instance;
 
 		if (prevNote == null)
@@ -227,6 +228,7 @@ class Note extends FlxSprite
 			texture = '';
 			rgbShader = new RGBShaderReference(this, initializeGlobalRGBShader(noteData));
 			if(PlayState.SONG != null && PlayState.SONG.disableNoteRGB) rgbShader.enabled = false;
+			if (ClientPrefs.data.noteSkin == 'vloo') rgbShader.enabled = false;
 
 			x += swagWidth * (noteData);
 			if(!isSustainNote && noteData < colArray.length) { //Doing this 'if' check to fix the warnings on Senpai songs
@@ -243,8 +245,10 @@ class Note extends FlxSprite
 
 		if (isSustainNote && prevNote != null)
 		{
-			alpha = 0.6;
-			multAlpha = 0.6;
+			// alpha = 0.6;
+			// multAlpha = 0.6;
+			alpha = 1;
+			multAlpha = 1;
 			hitsoundDisabled = true;
 			if(ClientPrefs.data.downScroll) flipY = true;
 

@@ -267,10 +267,11 @@ class PlayState extends MusicBeatState
 	public var defaultHUDZoom:Float = 1;
 
 	//use these instead of FlxTween if u want them to pause when u pause
-	public var playStateTween:FlxTweenManager = new FlxTweenManager();
-	public var playStateTimer:FlxTimerManager = new FlxTimerManager();
+	public var instanceTween:FlxTweenManager = new FlxTweenManager();
+	public var instanceTimer:FlxTimerManager = new FlxTimerManager();
 
 	public var eventTweensHandler:Map<String, FlxTween> = new Map<String, FlxTween>();
+	var debugMode:Bool = false;
 
 
 
@@ -325,6 +326,10 @@ class PlayState extends MusicBeatState
 
 		persistentUpdate = true;
 		persistentDraw = true;
+
+		#if debug 
+		debugMode = true;
+		#end
 
 		if (SONG == null)
 			SONG = Song.loadFromJson('tutorial');
@@ -551,6 +556,9 @@ class PlayState extends MusicBeatState
 		var iconTrayP1 = new AttachedSprite('ui/hpbar1');
 		iconTrayP1.flipX = true;
 		var iconTrayP2 = new AttachedSprite('ui/hpbar1');
+		iconTrayP1.antialiasing = false;
+		iconTrayP2.antialiasing = false;	
+
 		uiGroup.add(iconTrayP1);
 		uiGroup.add(iconTrayP2);
 
@@ -1511,8 +1519,8 @@ class PlayState extends MusicBeatState
 				vocals.pause();
 			}
 
-			playStateTween.active = false;
-			playStateTimer.active = false;
+			instanceTween.active = false;
+			instanceTimer.active = false;
 
 			if (startTimer != null && !startTimer.finished) startTimer.active = false;
 			if (finishTimer != null && !finishTimer.finished) finishTimer.active = false;
@@ -1542,8 +1550,8 @@ class PlayState extends MusicBeatState
 				resyncVocals();
 			}
 
-			playStateTween.active = true;
-			playStateTimer.active = true;
+			instanceTween.active = true;
+			instanceTimer.active = true;
 
 			if (startTimer != null && !startTimer.finished) startTimer.active = true;
 			if (finishTimer != null && !finishTimer.finished) finishTimer.active = true;
@@ -1619,8 +1627,14 @@ class PlayState extends MusicBeatState
 	{
 		callOnScripts('onUpdate', [elapsed]);
 
-		playStateTween.update(elapsed);
-		playStateTimer.update(elapsed);
+		if (chartingMode || debugMode) {
+			if (!Main.debugData.visible) Main.debugData.visible = true;
+			Main.debugData.text = 'Botplay: $cpuControlled\n\nCurStep: $curStep\nCurBeat: $curBeat\nTime: ${FlxStringUtil.formatTime(Math.floor((Conductor.songPosition - ClientPrefs.data.noteOffset)/1000), false)} / ${FlxStringUtil.formatTime(Math.floor(songLength)/1000,false)}';
+			if (FlxG.keys.justPressed.SIX) cpuControlled = !cpuControlled;
+		}
+
+		instanceTween.update(elapsed);
+		instanceTimer.update(elapsed);
 
 		if (generatedMusic && !endingSong && !isCameraOnForcedPos) moveCameraSection();
 

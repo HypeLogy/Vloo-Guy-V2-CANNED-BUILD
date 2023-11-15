@@ -1,5 +1,7 @@
 package;
 
+import openfl.text.TextFormat;
+import openfl.text.TextField;
 #if android
 import android.content.Context;
 #end
@@ -47,6 +49,7 @@ class Main extends Sprite
 	};
 
 	public static var fpsVar:backend.FPSCounter;
+	public static var debugData:TextField = null; //make fps counter more of a do it all thing
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
@@ -116,6 +119,16 @@ class Main extends Sprite
 		}
 		#end
 
+		debugData = new TextField();
+		debugData.y = fpsVar.height + 30;
+		debugData.x = 10;
+		debugData.selectable = false;
+		debugData.mouseEnabled = false;
+		debugData.defaultTextFormat = new TextFormat("_sans", 18, 0xFFFFFF);
+		debugData.autoSize = LEFT;
+		addChild(debugData);
+		debugData.visible = false;
+
 		#if linux
 		var icon = Image.fromFile("icon.png");
 		Lib.current.stage.window.setIcon(icon);
@@ -139,7 +152,7 @@ class Main extends Sprite
 		     if (FlxG.cameras != null) {
 			   for (cam in FlxG.cameras.list) {
 				@:privateAccess
-				if (cam != null && cam._filters != null)
+				if (cam != null && cam.filters != null)
 					resetSpriteCache(cam.flashSprite);
 			   }
 		     }
