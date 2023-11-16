@@ -63,7 +63,7 @@ class RuntimeShader extends FlxRuntimeShader
 		//basically a thing to check if the current state its being used in has instancetween. basically is a tweenmanager that
 		//is tied to whatever the state has setup
 		//so in this case PlayState instanceTween is set to pause whenever u pause
-		if (curState.instance.instanceTween != null) 
+		if (curState != null && curState.instance.instanceTween != null) 
 		{
 			tweenMap.set(name,curState.instance.instanceTween.num(getFloat(name),toValue,time, {ease: LuaUtils.getTweenEaseByString(ease), onComplete: function (t:FlxTween) {
 				tweenMap.remove(name);

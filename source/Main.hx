@@ -120,11 +120,11 @@ class Main extends Sprite
 		#end
 
 		debugData = new TextField();
-		debugData.y = fpsVar.height + 30;
+		debugData.y = 0;
 		debugData.x = 10;
 		debugData.selectable = false;
 		debugData.mouseEnabled = false;
-		debugData.defaultTextFormat = new TextFormat("_sans", 18, 0xFFFFFF);
+		debugData.defaultTextFormat = new TextFormat("_sans", 14, 0xFFFFFF);
 		debugData.autoSize = LEFT;
 		addChild(debugData);
 		debugData.visible = false;

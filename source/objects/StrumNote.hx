@@ -130,8 +130,10 @@ class StrumNote extends FlxSprite
 					animation.addByPrefix('confirm', 'down confirm', 24, false);
 					if (ClientPrefs.data.noteSkin == 'vloo') 
 					{
-						addOffset('pressed',7,-8);
-						addOffset('confirm',-1,-8);
+						var baseX:Float = -5;
+						addOffset('static',baseX);
+						addOffset('pressed',7 + baseX,-8);
+						addOffset('confirm',-1 + baseX,-8);
 					}
 				case 2: //up
 					animation.addByPrefix('static', 'arrowUP');
@@ -139,8 +141,10 @@ class StrumNote extends FlxSprite
 					animation.addByPrefix('confirm', 'up confirm', 24, false);
 					if (ClientPrefs.data.noteSkin == 'vloo') 
 					{
-						addOffset('pressed',-6,-10);
-						addOffset('confirm',-4,-10);
+						var baseX:Float = 3;
+						addOffset('static',baseX);
+						addOffset('pressed',-6 + baseX,-10);
+						addOffset('confirm',-4 + baseX,-10);
 					}
 				case 3: //right
 					animation.addByPrefix('static', 'arrowRIGHT');

@@ -10,6 +10,8 @@ package states;
 // "function eventEarlyTrigger" - Used for making your event start a few MILLISECONDS earlier
 // "function triggerEvent" - Called when the song hits your event's timestamp, this is probably what you were looking for
 
+import flixel.text.FlxBitmapText;
+import flixel.graphics.frames.FlxBitmapFont;
 import flixel.system.FlxAssets.FlxShader;
 import backend.Highscore;
 import backend.StageData;
@@ -205,9 +207,9 @@ class PlayState extends MusicBeatState
 	public var songScore:Int = 0;
 	public var songHits:Int = 0;
 	public var songMisses:Int = 0;
-	public var scoreTxt:FlxText;
 	var timeTxt:FlxText;
 	var scoreTxtTween:FlxTween;
+	var scoreTxtTween2:FlxTween;
 
 	public static var campaignScore:Int = 0;
 	public static var campaignMisses:Int = 0;
@@ -273,13 +275,15 @@ class PlayState extends MusicBeatState
 	public var eventTweensHandler:Map<String, FlxTween> = new Map<String, FlxTween>();
 	var debugMode:Bool = false;
 
-
-
+	var vlooScoreText:FlxBitmapText;
+	var vlooScoreSprite:AttachedSprite;
 
 	override public function create()
 	{
 		//trace('Playback Rate: ' + playbackRate);
 		Paths.clearStoredMemory();
+
+		if (ClientPrefs.data.noteSkin == 'vloo') STRUM_X = 52;
 
 		startCallback = startCountdown;
 		endCallback = endSong;
@@ -580,13 +584,19 @@ class PlayState extends MusicBeatState
 		iconTrayP2.xAdd = -30;
 		iconTrayP2.yAdd = 25;
 
-		scoreTxt = new FlxText(0, healthBar.y + 40, FlxG.width, "", 20);
-		scoreTxt.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		scoreTxt.scrollFactor.set();
-		scoreTxt.borderSize = 1.25;
-		scoreTxt.visible = !ClientPrefs.data.hideHud;
+		vlooScoreText = new FlxBitmapText(FlxBitmapFont.fromMonospace(Paths.image('ui/numbers'),'1234567890', new FlxPoint(41,51)));
+		vlooScoreText.scrollFactor.set();
+		vlooScoreText.setPosition(healthBar.x + 120, healthBar.y - vlooScoreText.height);
+		uiGroup.add(vlooScoreText);
+
+		vlooScoreSprite = new AttachedSprite('ui/score');
+		vlooScoreSprite.scrollFactor.set();
+		vlooScoreSprite.antialiasing = false;
+		vlooScoreSprite.xAdd = -vlooScoreSprite.width - 5;
+		vlooScoreSprite.yAdd = -14;
+		vlooScoreSprite.sprTracker = vlooScoreText;
+		uiGroup.add(vlooScoreSprite);
 		updateScore(false);
-		uiGroup.add(scoreTxt);
 
 		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -601,7 +611,7 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		uiGroup.cameras = [camHUD];
-		comboGroup.cameras = [camHUD];
+		//comboGroup.cameras = [camHUD];
 
 		startingSong = true;
 		
@@ -1158,10 +1168,8 @@ class PlayState extends MusicBeatState
 			str += ' (${percent}%) - ${ratingFC}';
 		}
 
-		scoreTxt.text = 'Score: ${songScore}'
-		+ (!instakillOnMiss ? ' | Misses: ${songMisses}' : "")
-		+ ' | Rating: ${str}';
 
+		vlooScoreText.text = '$songScore';
 		if (!miss && !cpuControlled)
 			doScoreBop();
 
@@ -1175,13 +1183,20 @@ class PlayState extends MusicBeatState
 		if(scoreTxtTween != null)
 			scoreTxtTween.cancel();
 
-		scoreTxt.scale.x = 1.075;
-		scoreTxt.scale.y = 1.075;
-		scoreTxtTween = FlxTween.tween(scoreTxt.scale, {x: 1, y: 1}, 0.2, {
-			onComplete: function(twn:FlxTween) {
-				scoreTxtTween = null;
+		if(scoreTxtTween2 != null)
+			scoreTxtTween2.cancel();
+
+		vlooScoreSprite.scale.set(1.05,1.05);
+		vlooScoreText.scale.set(1.05,1.05);
+		scoreTxtTween = FlxTween.tween(vlooScoreSprite.scale, {x: 1, y: 1}, 0.2, {onComplete: Void-> {
+			scoreTxtTween = null;
 			}
 		});
+		scoreTxtTween2 = FlxTween.tween(vlooScoreText.scale, {x: 1, y: 1}, 0.2, {onComplete: Void-> {
+			scoreTxtTween2 = null;
+			}
+		});
+
 	}
 
 	public function setSongTime(time:Float)
@@ -1629,7 +1644,7 @@ class PlayState extends MusicBeatState
 
 		if (chartingMode || debugMode) {
 			if (!Main.debugData.visible) Main.debugData.visible = true;
-			Main.debugData.text = 'Botplay: $cpuControlled\n\nCurStep: $curStep\nCurBeat: $curBeat\nTime: ${FlxStringUtil.formatTime(Math.floor((Conductor.songPosition - ClientPrefs.data.noteOffset)/1000), false)} / ${FlxStringUtil.formatTime(Math.floor(songLength)/1000,false)}';
+			Main.debugData.text = '\n\n\nBotplay: $cpuControlled\nCurStep: $curStep\nCurBeat: $curBeat\nTime: ${FlxStringUtil.formatTime(Math.floor((Conductor.songPosition - ClientPrefs.data.noteOffset)/1000), false)} / ${FlxStringUtil.formatTime(Math.floor(songLength)/1000,false)}';
 			if (FlxG.keys.justPressed.SIX) cpuControlled = !cpuControlled;
 		}
 
