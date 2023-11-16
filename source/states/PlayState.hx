@@ -209,7 +209,6 @@ class PlayState extends MusicBeatState
 	public var songMisses:Int = 0;
 	var timeTxt:FlxText;
 	var scoreTxtTween:FlxTween;
-	var scoreTxtTween2:FlxTween;
 
 	public static var campaignScore:Int = 0;
 	public static var campaignMisses:Int = 0;
@@ -276,7 +275,6 @@ class PlayState extends MusicBeatState
 	var debugMode:Bool = false;
 
 	var vlooScoreText:FlxBitmapText;
-	var vlooScoreSprite:AttachedSprite;
 
 	override public function create()
 	{
@@ -584,18 +582,10 @@ class PlayState extends MusicBeatState
 		iconTrayP2.xAdd = -30;
 		iconTrayP2.yAdd = 25;
 
-		vlooScoreText = new FlxBitmapText(FlxBitmapFont.fromMonospace(Paths.image('ui/numbers'),'1234567890', new FlxPoint(41,51)));
+		vlooScoreText = new FlxBitmapText(FlxBitmapFont.fromMonospace(Paths.image('ui/numbers'),'1234567890scr', new FlxPoint(41,65)));
 		vlooScoreText.scrollFactor.set();
-		vlooScoreText.setPosition(healthBar.x + 120, healthBar.y - vlooScoreText.height);
+		vlooScoreText.setPosition(healthBar.x, healthBar.y - vlooScoreText.height);
 		uiGroup.add(vlooScoreText);
-
-		vlooScoreSprite = new AttachedSprite('ui/score');
-		vlooScoreSprite.scrollFactor.set();
-		vlooScoreSprite.antialiasing = false;
-		vlooScoreSprite.xAdd = -vlooScoreSprite.width - 5;
-		vlooScoreSprite.yAdd = -14;
-		vlooScoreSprite.sprTracker = vlooScoreText;
-		uiGroup.add(vlooScoreSprite);
 		updateScore(false);
 
 		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOTPLAY", 32);
@@ -1169,7 +1159,7 @@ class PlayState extends MusicBeatState
 		}
 
 
-		vlooScoreText.text = '$songScore';
+		vlooScoreText.text = 'scr$songScore';
 		if (!miss && !cpuControlled)
 			doScoreBop();
 
@@ -1183,17 +1173,10 @@ class PlayState extends MusicBeatState
 		if(scoreTxtTween != null)
 			scoreTxtTween.cancel();
 
-		if(scoreTxtTween2 != null)
-			scoreTxtTween2.cancel();
 
-		vlooScoreSprite.scale.set(1.05,1.05);
 		vlooScoreText.scale.set(1.05,1.05);
-		scoreTxtTween = FlxTween.tween(vlooScoreSprite.scale, {x: 1, y: 1}, 0.2, {onComplete: Void-> {
+		scoreTxtTween = FlxTween.tween(vlooScoreText.scale, {x: 1, y: 1}, 0.2, {onComplete: Void-> {
 			scoreTxtTween = null;
-			}
-		});
-		scoreTxtTween2 = FlxTween.tween(vlooScoreText.scale, {x: 1, y: 1}, 0.2, {onComplete: Void-> {
-			scoreTxtTween2 = null;
 			}
 		});
 
