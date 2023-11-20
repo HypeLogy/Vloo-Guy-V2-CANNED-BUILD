@@ -1,11 +1,27 @@
 package backend;
 
+import flixel.util.FlxArrayUtil;
 import flixel.addons.ui.FlxUIState;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.FlxState;
 
 class MusicBeatState extends FlxUIState
 {
+	public static var timeOnState:Float = 0;
+	public static inline function resetStateTime() {
+		timeOnState = 0;
+	}
+
+	public static var updateItime:Array<FlxRuntimeShader> = [];
+	public static inline function cleariTime()
+		FlxArrayUtil.clearArray(updateItime);
+
+	public static function clearShaderData() {
+		cleariTime();
+		//resetStateTime();
+	}
+	public static var currentState:FlxState;
+	
 	private var curSection:Int = 0;
 	private var stepsToDo:Int = 0;
 
@@ -27,18 +43,27 @@ class MusicBeatState extends FlxUIState
 		var skip:Bool = FlxTransitionableState.skipNextTransOut;
 		#if MODS_ALLOWED Mods.updatedOnState = false; #end
 
+	
+
 		super.create();
 
 		if(!skip) {
 			openSubState(new CustomFadeTransition(0.7, true));
 		}
 		FlxTransitionableState.skipNextTransOut = false;
+		if (Main.debugData != null) Main.debugData.visible = false;
 		timePassedOnState = 0;
+		cleariTime();
+
+	
+
 	}
 
 	public static var timePassedOnState:Float = 0;
 	override function update(elapsed:Float)
 	{
+		timeOnState+=elapsed;
+		for (i in updateItime) i.setFloat('iTime', timeOnState);
 		//everyStep();
 		var oldStep:Int = curStep;
 		timePassedOnState += elapsed;
@@ -118,6 +143,7 @@ class MusicBeatState extends FlxUIState
 	}
 
 	public static function switchState(nextState:FlxState = null) {
+		currentState = nextState;
 		if(nextState == null) nextState = FlxG.state;
 		if(nextState == FlxG.state)
 		{

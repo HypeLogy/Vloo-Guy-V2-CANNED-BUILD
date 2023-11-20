@@ -6,7 +6,7 @@ import flixel.util.FlxSort;
 
 import openfl.utils.AssetType;
 import openfl.utils.Assets;
-import tjson.TJSON as Json;
+import haxe.Json;
 
 import backend.Song;
 import backend.Section;

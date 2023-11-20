@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="stopcrying.png">
+<SubTexture name="idle0000" x="0" y="0" width="130" height="142" frameX="-63" frameY="-146" frameWidth="268" frameHeight="360" />
+<SubTexture name="idle0001" x="130" y="0" width="127" height="144" frameX="-64" frameY="-144" frameWidth="268" frameHeight="360" />
+<SubTexture name="idle0002" x="257" y="0" width="124" height="145" frameX="-66" frameY="-143" frameWidth="268" frameHeight="360" />
+<SubTexture name="idle0003" x="381" y="0" width="122" height="150" frameX="-67" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="idle0004" x="503" y="0" width="122" height="146" frameX="-67" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="down0000" x="0" y="150" width="126" height="118" frameX="-69" frameY="-175" frameWidth="268" frameHeight="360" />
+<SubTexture name="down0001" x="126" y="150" width="117" height="125" frameX="-73" frameY="-168" frameWidth="268" frameHeight="360" />
+<SubTexture name="right0000" x="243" y="150" width="134" height="142" frameX="-69" frameY="-149" frameWidth="268" frameHeight="360" />
+<SubTexture name="right0001" x="377" y="150" width="129" height="142" frameX="-70" frameY="-149" frameWidth="268" frameHeight="360" />
+<SubTexture name="up0000" x="506" y="150" width="107" height="149" frameX="-78" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="up0001" x="0" y="299" width="113" height="147" frameX="-76" frameY="-143" frameWidth="268" frameHeight="360" />
+<SubTexture name="left0000" x="113" y="299" width="136" height="155" frameX="-74" frameY="-137" frameWidth="268" frameHeight="360" />
+<SubTexture name="left0001" x="249" y="299" width="129" height="153" frameX="-76" frameY="-138" frameWidth="268" frameHeight="360" />
+<SubTexture name="missdown0000" x="378" y="299" width="117" height="125" frameX="-73" frameY="-168" frameWidth="268" frameHeight="360" />
+<SubTexture name="missdown0001" x="495" y="299" width="120" height="122" frameX="-72" frameY="-171" frameWidth="268" frameHeight="360" />
+<SubTexture name="missright0000" x="0" y="454" width="134" height="142" frameX="-69" frameY="-149" frameWidth="268" frameHeight="360" />
+<SubTexture name="missright0001" x="134" y="454" width="168" height="171" frameX="-72" frameY="-120" frameWidth="268" frameHeight="360" />
+<SubTexture name="missup0000" x="302" y="454" width="115" height="149" frameX="-78" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="missup0001" x="417" y="454" width="116" height="151" frameX="-79" frameY="-140" frameWidth="268" frameHeight="360" />
+<SubTexture name="missleft0000" x="533" y="454" width="134" height="153" frameX="-71" frameY="-138" frameWidth="268" frameHeight="360" />
+<SubTexture name="missleft0001" x="0" y="625" width="181" height="175" frameX="-70" frameY="-116" frameWidth="268" frameHeight="360" />
+<SubTexture name="firstdeath0000" x="181" y="625" width="122" height="146" frameX="-67" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="firstdeath0001" x="303" y="625" width="122" height="146" frameX="-67" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="firstdeath0002" x="425" y="625" width="122" height="146" frameX="-67" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="firstdeath0003" x="547" y="625" width="122" height="146" frameX="-67" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="firstdeath0004" x="0" y="800" width="122" height="146" frameX="-67" frameY="-142" frameWidth="268" frameHeight="360" />
+<SubTexture name="deathconfirm0000" x="122" y="800" width="122" height="146" frameX="-67" frameY="-142" frameWidth="268" frameHeight="360" />
+</TextureAtlas>

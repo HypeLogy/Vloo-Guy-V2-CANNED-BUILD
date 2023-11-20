@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="ourple-dbf.png">
+<SubTexture name="Idle0000" x="0" y="0" width="119" height="108" frameX="-72" frameY="-103" frameWidth="263" frameHeight="276" />
+<SubTexture name="Idle0001" x="119" y="0" width="114" height="112" frameX="-74" frameY="-99" frameWidth="263" frameHeight="276" />
+<SubTexture name="Idle0002" x="233" y="0" width="107" height="115" frameX="-78" frameY="-96" frameWidth="263" frameHeight="276" />
+<SubTexture name="Idle0003" x="0" y="115" width="103" height="117" frameX="-80" frameY="-94" frameWidth="263" frameHeight="276" />
+<SubTexture name="Down0000" x="103" y="115" width="87" height="99" frameX="-87" frameY="-112" frameWidth="263" frameHeight="276" />
+<SubTexture name="Down0001" x="190" y="115" width="90" height="96" frameX="-86" frameY="-115" frameWidth="263" frameHeight="276" />
+<SubTexture name="Right0000" x="0" y="232" width="115" height="114" frameX="-91" frameY="-97" frameWidth="263" frameHeight="276" />
+<SubTexture name="Right0001" x="115" y="232" width="114" height="114" frameX="-89" frameY="-97" frameWidth="263" frameHeight="276" />
+<SubTexture name="Up0000" x="229" y="232" width="85" height="135" frameX="-103" frameY="-75" frameWidth="263" frameHeight="276" />
+<SubTexture name="Up0001" x="0" y="367" width="89" height="130" frameX="-101" frameY="-80" frameWidth="263" frameHeight="276" />
+<SubTexture name="Left0000" x="89" y="367" width="125" height="110" frameX="-58" frameY="-100" frameWidth="263" frameHeight="276" />
+<SubTexture name="Left0001" x="214" y="367" width="129" height="110" frameX="-50" frameY="-100" frameWidth="263" frameHeight="276" />
+</TextureAtlas>

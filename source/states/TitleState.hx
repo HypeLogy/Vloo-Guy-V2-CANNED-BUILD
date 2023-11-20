@@ -9,7 +9,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.graphics.frames.FlxFrame;
 import flixel.group.FlxGroup;
 import flixel.input.gamepad.FlxGamepad;
-import tjson.TJSON as Json;
+import haxe.Json;
 
 import openfl.Assets;
 import openfl.display.Bitmap;
@@ -141,6 +141,7 @@ class TitleState extends MusicBeatState
 				FlxG.fullscreen = FlxG.save.data.fullscreen;
 				//trace('LOADED FULLSCREEN SETTING!!');
 			}
+			FlxG.signals.preStateSwitch.add(MusicBeatState.clearShaderData);
 			persistentUpdate = true;
 			persistentDraw = true;
 		}

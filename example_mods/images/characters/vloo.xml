@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sprites.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="IDLE00000" x="0" y="0" width="1015" height="494"/>
+	<SubTexture name="IDLE00001" x="1015" y="0" width="1015" height="494"/>
+	<SubTexture name="IDLE00002" x="2030" y="0" width="1015" height="494"/>
+	<SubTexture name="IDLE00003" x="3045" y="0" width="1015" height="494"/>
+	<SubTexture name="down00000" x="4060" y="0" width="1015" height="494"/>
+	<SubTexture name="down00001" x="5075" y="0" width="1015" height="494"/>
+	<SubTexture name="up00000" x="0" y="494" width="1015" height="494"/>
+	<SubTexture name="up00001" x="1015" y="494" width="1015" height="494"/>
+	<SubTexture name="left00000" x="2030" y="494" width="1015" height="494"/>
+	<SubTexture name="left00001" x="3045" y="494" width="1015" height="494"/>
+	<SubTexture name="right00000" x="4060" y="494" width="1015" height="494"/>
+	<SubTexture name="right00001" x="5075" y="494" width="1015" height="494"/>
+	<SubTexture name="liveleak00000" x="3045" y="0" width="1015" height="494"/>
+	<SubTexture name="liveleak00001" x="3045" y="0" width="1015" height="494"/>
+	<SubTexture name="liveleak00002" x="0" y="988" width="1015" height="494"/>
+	<SubTexture name="liveleak00003" x="1015" y="988" width="1015" height="494"/>
+	<SubTexture name="liveleak00004" x="2030" y="988" width="1015" height="494"/>
+	<SubTexture name="liveleak00005" x="3045" y="988" width="1015" height="494"/>
+	<SubTexture name="liveleak00006" x="4060" y="988" width="1015" height="494"/>
+	<SubTexture name="liveleak00007" x="5075" y="988" width="1015" height="494"/>
+	<SubTexture name="liveleak00008" x="0" y="1482" width="1015" height="494"/>
+	<SubTexture name="liveleak00009" x="1015" y="1482" width="1015" height="494"/>
+	<SubTexture name="liveleak00010" x="2030" y="1482" width="1015" height="494"/>
+	<SubTexture name="liveleak00011" x="3045" y="1482" width="1015" height="494"/>
+	<SubTexture name="liveleak00012" x="4060" y="1482" width="1015" height="494"/>
+	<SubTexture name="liveleak00013" x="5075" y="1482" width="1015" height="494"/>
+	<SubTexture name="liveleak00014" x="0" y="1976" width="1015" height="494"/>
+	<SubTexture name="altup00000" x="1015" y="1976" width="1015" height="494"/>
+	<SubTexture name="altup00001" x="2030" y="1976" width="1015" height="494"/>
+	<SubTexture name="altleft00000" x="3045" y="1976" width="1015" height="494"/>
+	<SubTexture name="altleft00001" x="4060" y="1976" width="1015" height="494"/>
+	<SubTexture name="altright00000" x="5075" y="1976" width="1015" height="494"/>
+	<SubTexture name="altright00001" x="0" y="2470" width="1015" height="494"/>
+	<SubTexture name="altdown00000" x="1015" y="2470" width="1015" height="494"/>
+	<SubTexture name="altdown00001" x="2030" y="2470" width="1015" height="494"/>
+</TextureAtlas>
