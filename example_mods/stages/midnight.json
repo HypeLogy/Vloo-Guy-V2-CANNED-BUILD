@@ -1,0 +1,15 @@
+{
+	"directory": "week1",
+	"defaultZoom": 1.7,
+	"stageUI": "",
+
+	"boyfriend": [800, 350],
+	"girlfriend": [800, 360],
+	"opponent": [550, 373],
+	"hide_girlfriend": false,
+
+	"camera_boyfriend": [0, -80],
+	"camera_opponent": [0, -55],
+	"camera_girlfriend": [0, 0],
+	"camera_speed": 1
+}

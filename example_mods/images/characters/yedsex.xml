@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="yedsex.png">
+<SubTexture name="idle0000" x="222" y="240" width="111" height="190" frameX="-94" frameY="-55" frameWidth="274" frameHeight="274" />
+<SubTexture name="idle0001" x="333" y="240" width="118" height="186" frameX="-92" frameY="-59" frameWidth="274" frameHeight="274" />
+<SubTexture name="idle0002" x="110" y="240" width="112" height="191" frameX="-94" frameY="-54" frameWidth="274" frameHeight="274" />
+<SubTexture name="idle0003" x="0" y="240" width="110" height="196" frameX="-95" frameY="-49" frameWidth="274" frameHeight="274" />
+<SubTexture name="right0000" x="513" y="0" width="170" height="179" frameX="-88" frameY="-67" frameWidth="274" frameHeight="274" />
+<SubTexture name="right0001" x="0" y="436" width="171" height="179" frameX="-79" frameY="-67" frameWidth="274" frameHeight="274" />
+<SubTexture name="left0000" x="236" y="0" width="139" height="202" frameX="-49" frameY="-48" frameWidth="274" frameHeight="274" />
+<SubTexture name="left0001" x="375" y="0" width="138" height="202" frameX="-56" frameY="-48" frameWidth="274" frameHeight="274" />
+<SubTexture name="up0000" x="0" y="0" width="114" height="240" frameX="-85" frameY="-6" frameWidth="274" frameHeight="274" />
+<SubTexture name="up0001" x="114" y="0" width="122" height="228" frameX="-79" frameY="-18" frameWidth="274" frameHeight="274" />
+<SubTexture name="down0000" x="368" y="436" width="202" height="134" frameX="-13" frameY="-132" frameWidth="274" frameHeight="274" />
+<SubTexture name="down0001" x="171" y="436" width="197" height="137" frameX="-19" frameY="-129" frameWidth="274" frameHeight="274" />
+</TextureAtlas>

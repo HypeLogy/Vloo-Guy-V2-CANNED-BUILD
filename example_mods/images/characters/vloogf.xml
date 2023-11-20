@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="vloogf.png">
+<SubTexture name="left0000" x="267" y="0" width="94" height="140" frameX="-9" frameY="-13" frameWidth="118" frameHeight="162" />
+<SubTexture name="left0001" x="260" y="142" width="95" height="136" frameX="-8" frameY="-17" frameWidth="118" frameHeight="162" />
+<SubTexture name="left0002" x="84" y="142" width="91" height="139" frameX="-13" frameY="-14" frameWidth="118" frameHeight="162" />
+<SubTexture name="left0003" x="89" y="0" width="90" height="141" frameX="-15" frameY="-12" frameWidth="118" frameHeight="162" />
+<SubTexture name="left0004" x="0" y="0" width="89" height="142" frameX="-16" frameY="-11" frameWidth="118" frameHeight="162" />
+<SubTexture name="left0005" x="0" y="0" width="89" height="142" frameX="-16" frameY="-11" frameWidth="118" frameHeight="162" />
+<SubTexture name="right0000" x="0" y="142" width="84" height="140" frameX="-23" frameY="-13" frameWidth="118" frameHeight="162" />
+<SubTexture name="right0001" x="361" y="0" width="84" height="136" frameX="-23" frameY="-17" frameWidth="118" frameHeight="162" />
+<SubTexture name="right0002" x="175" y="142" width="85" height="138" frameX="-22" frameY="-15" frameWidth="118" frameHeight="162" />
+<SubTexture name="right0003" x="179" y="0" width="88" height="141" frameX="-17" frameY="-12" frameWidth="118" frameHeight="162" />
+<SubTexture name="right0004" x="0" y="0" width="89" height="142" frameX="-16" frameY="-11" frameWidth="118" frameHeight="162" />
+<SubTexture name="right0005" x="0" y="0" width="89" height="142" frameX="-16" frameY="-11" frameWidth="118" frameHeight="162" />
+</TextureAtlas>
