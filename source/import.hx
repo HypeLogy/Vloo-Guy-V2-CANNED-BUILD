@@ -65,5 +65,6 @@ import flixel.tweens.FlxTween;
 import flixel.group.FlxSpriteGroup;
 import flixel.group.FlxGroup.FlxTypedGroup;
 
+using backend.FlxObjectTools;
 using StringTools;
 #end

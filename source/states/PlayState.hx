@@ -3150,14 +3150,9 @@ class PlayState extends MusicBeatState
 	{
 		if (SONG.notes[curSection] != null)
 		{
-			if (generatedMusic && !endingSong && !isCameraOnForcedPos)
+			//if (generatedMusic && !endingSong && !isCameraOnForcedPos)
 				//moveCameraSection();
 
-			// if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)
-			// {
-			// 	FlxG.camera.zoom += 0.015 * camZoomingMult;
-			// 	camHUD.zoom += 0.03 * camZoomingMult;
-			// }
 
 			if (SONG.notes[curSection].changeBPM)
 			{
