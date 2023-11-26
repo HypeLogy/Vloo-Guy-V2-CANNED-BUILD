@@ -1,0 +1,67 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"fps": 24,
+			"name": "markintro talk",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "intro"
+		},
+		{
+			"offsets": [
+				-262,
+				-57
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-100,
+				-120
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "retry"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/markdies",
+	"position": [
+		-130,
+		40
+	],
+	"healthicon": "mark",
+	"flip_x": true,
+	"healthbar_colors": [
+		39,
+		97,
+		93
+	],
+	"camera_position": [
+		-150,
+		-50
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "bbb idle"
+		},
+		{
+			"offsets": [
+				66,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "bbb left"
+		},
+		{
+			"offsets": [
+				-48,
+				-49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "bbb down"
+		},
+		{
+			"offsets": [
+				-72,
+				-24
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "bbb right"
+		},
+		{
+			"offsets": [
+				30,
+				37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "bbb up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				80,
+				17
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "bbb jumpscare1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				44,
+				58
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "bbb jumpscare2",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				16,
+				-60
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "bbb jumpscare3",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-62,
+				-39
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "bbb jumpscare4",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bbb",
+	"position": [
+		140,
+		210
+	],
+	"healthicon": "blam",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		221,
+		255
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

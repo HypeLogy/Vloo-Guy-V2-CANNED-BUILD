@@ -29,7 +29,7 @@ class HealthIcon extends FlxSprite
 		if(this.char != char) {
 			var name:String = 'icons/' + char;
 			if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-' + char; //Older versions of psych engine's support
-			if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-face'; //Prevents crash from missing icon
+			if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/icon-vloo'; //Prevents crash from missing icon
 			
 			var graphic = Paths.image(name, allowGPU);
 			loadGraphic(graphic, true, Math.floor(graphic.width / 2), Math.floor(graphic.height));
@@ -45,6 +45,9 @@ class HealthIcon extends FlxSprite
 				antialiasing = false;
 			else
 				antialiasing = ClientPrefs.data.antialiasing;
+
+			//TEMP 
+			antialiasing = false;
 		}
 	}
 

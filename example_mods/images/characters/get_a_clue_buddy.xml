@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="get_a_clue_buddy.png">
+<SubTexture name="idle0000" x="0" y="0" width="107" height="155" frameX="-84" frameY="-72" frameWidth="279" frameHeight="279" />
+<SubTexture name="idle0001" x="107" y="0" width="98" height="163" frameX="-88" frameY="-64" frameWidth="279" frameHeight="279" />
+<SubTexture name="idle0002" x="205" y="0" width="97" height="170" frameX="-89" frameY="-57" frameWidth="279" frameHeight="279" />
+<SubTexture name="idle0003" x="302" y="0" width="93" height="176" frameX="-91" frameY="-51" frameWidth="279" frameHeight="279" />
+<SubTexture name="down0000" x="0" y="176" width="147" height="136" frameX="-86" frameY="-91" frameWidth="279" frameHeight="279" />
+<SubTexture name="down0001" x="147" y="176" width="139" height="141" frameX="-89" frameY="-86" frameWidth="279" frameHeight="279" />
+<SubTexture name="left0000" x="286" y="176" width="138" height="172" frameX="-46" frameY="-55" frameWidth="279" frameHeight="279" />
+<SubTexture name="left0001" x="424" y="176" width="126" height="172" frameX="-60" frameY="-55" frameWidth="279" frameHeight="279" />
+<SubTexture name="up0000" x="0" y="348" width="103" height="207" frameX="-91" frameY="-20" frameWidth="279" frameHeight="279" />
+<SubTexture name="up0001" x="103" y="348" width="109" height="202" frameX="-88" frameY="-25" frameWidth="279" frameHeight="279" />
+<SubTexture name="right0000" x="212" y="348" width="121" height="178" frameX="-111" frameY="-49" frameWidth="279" frameHeight="279" />
+<SubTexture name="right0001" x="333" y="348" width="115" height="178" frameX="-109" frameY="-49" frameWidth="279" frameHeight="279" />
+<SubTexture name="right0002" x="333" y="348" width="115" height="178" frameX="-109" frameY="-49" frameWidth="279" frameHeight="279" />
+</TextureAtlas>

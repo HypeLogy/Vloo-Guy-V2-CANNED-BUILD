@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "grunkfus idle"
+		},
+		{
+			"offsets": [
+				-119,
+				51
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "grunkfus left"
+		},
+		{
+			"offsets": [
+				-35,
+				-43
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "grunkfus down"
+		},
+		{
+			"offsets": [
+				-234,
+				168
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "grunkfus up"
+		},
+		{
+			"offsets": [
+				-182,
+				34
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "grunkfus right"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/grunkfus",
+	"position": [
+		-520,
+		180
+	],
+	"healthicon": "grunkfussy",
+	"flip_x": false,
+	"healthbar_colors": [
+		124,
+		40,
+		40
+	],
+	"camera_position": [
+		-70,
+		30
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

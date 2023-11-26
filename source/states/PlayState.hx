@@ -1145,6 +1145,18 @@ class PlayState extends MusicBeatState
 		}
 	}
 
+	public function swapStrums():Void
+	{
+		var oppX:Array<Float> = [];
+		var playerX:Array<Float> = [];
+		for (i in opponentStrums) oppX.push(i.x);
+		for (i in playerStrums) playerX.push(i.x);
+		
+		for (i in 0...opponentStrums.length) opponentStrums.members[i].x = playerX[i];
+		for (i in 0...playerStrums.length) playerStrums.members[i].x = oppX[i];
+
+	}
+
 	public function updateScore(miss:Bool = false)
 	{
 		var ret:Dynamic = callOnScripts('preUpdateScore', [miss], true);
@@ -2495,12 +2507,16 @@ class PlayState extends MusicBeatState
 			if (PlayState.isPixelStage) uiSuffix = '-pixel';
 			antialias = !isPixelStage;
 		}
+		//vloo
+		antialias = false;
 
 		rating.loadGraphic(Paths.image(uiPrefix + daRating.image + uiSuffix));
 		rating.screenCenter();
 		rating.x = placement - 40;
 		rating.y -= 60;
 		rating.acceleration.y = 550 * playbackRate * playbackRate;
+		rating.angularVelocity = FlxG.random.int(-20, 20) * playbackRate;
+		rating.angle = FlxG.random.int( -10, 10);
 		rating.velocity.y -= FlxG.random.int(140, 175) * playbackRate;
 		rating.velocity.x -= FlxG.random.int(0, 10) * playbackRate;
 		rating.visible = (!ClientPrefs.data.hideHud && showRating);
@@ -2523,8 +2539,8 @@ class PlayState extends MusicBeatState
 
 		if (!PlayState.isPixelStage)
 		{
-			rating.setGraphicSize(Std.int(rating.width * 0.7));
-			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
+			rating.setGraphicSize(Std.int(rating.width * 0.7) / (defaultCamZoom * 0.4));
+			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7) / (defaultCamZoom * 0.4));
 		}
 		else
 		{

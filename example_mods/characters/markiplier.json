@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "markiplier idle"
+		},
+		{
+			"offsets": [
+				50,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "markiplier left"
+		},
+		{
+			"offsets": [
+				-31,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "markiplier down"
+		},
+		{
+			"offsets": [
+				-10,
+				40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "markiplier up"
+		},
+		{
+			"offsets": [
+				140,
+				6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "markiplier right"
+		},
+		{
+			"offsets": [
+				43,
+				3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "markiplier missleft"
+		},
+		{
+			"offsets": [
+				-50,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "markiplier missdown"
+		},
+		{
+			"offsets": [
+				-10,
+				19
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "markiplier missup"
+		},
+		{
+			"offsets": [
+				152,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "markiplier missright"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/markiplier",
+	"position": [
+		0,
+		90
+	],
+	"healthicon": "mark",
+	"flip_x": true,
+	"healthbar_colors": [
+		39,
+		97,
+		93
+	],
+	"camera_position": [
+		-450,
+		-90
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="nbp.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="00000" x="0" y="0" width="157" height="142"/>
+	<SubTexture name="00001" x="157" y="0" width="157" height="142"/>
+	<SubTexture name="00002" x="314" y="0" width="157" height="142"/>
+	<SubTexture name="00003" x="471" y="0" width="157" height="142"/>
+	<SubTexture name="00004" x="628" y="0" width="157" height="142"/>
+	<SubTexture name="00005" x="785" y="0" width="157" height="142"/>
+	<SubTexture name="00006" x="942" y="0" width="157" height="142"/>
+	<SubTexture name="00007" x="1099" y="0" width="157" height="142"/>
+	<SubTexture name="00008" x="1256" y="0" width="157" height="142"/>
+	<SubTexture name="00009" x="1413" y="0" width="157" height="142"/>
+	<SubTexture name="00010" x="1570" y="0" width="157" height="142"/>
+	<SubTexture name="00011" x="1727" y="0" width="157" height="142"/>
+	<SubTexture name="00012" x="1884" y="0" width="157" height="142"/>
+</TextureAtlas>

@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				70,
 				65
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 12,
-			"name": "idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				76,
 				66
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 12,
-			"name": "down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				76,
 				65
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 12,
-			"name": "left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				75,
 				68
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 12,
-			"name": "up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				74,
 				67
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 12,
-			"name": "right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
 		}
 	],
 	"no_antialiasing": true,
@@ -62,12 +62,12 @@
 		50,
 		-10
 	],
-	"healthicon": "prange",
+	"healthicon": "yedguy",
 	"flip_x": false,
 	"healthbar_colors": [
-		144,
-		96,
-		0
+		185,
+		34,
+		12
 	],
 	"camera_position": [
 		-160,

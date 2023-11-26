@@ -46,9 +46,9 @@ class Song
 	public var disableNoteRGB:Bool = false;
 	public var speed:Float = 1;
 	public var stage:String;
-	public var player1:String = 'bf';
-	public var player2:String = 'dad';
-	public var gfVersion:String = 'gf';
+	public var player1:String = 'bfvloo';
+	public var player2:String = 'vloo';
+	public var gfVersion:String = 'gf-vloo';
 
 	private static function onLoadJson(songJson:Dynamic) // Convert old charts to newest format
 	{
