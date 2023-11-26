@@ -524,8 +524,8 @@ class PlayState extends MusicBeatState
 
 		uiGroup.add(timeBar);
 		uiGroup.add(timeTxt);
-		add(timeHouse);
-		add(pizzaMan);
+		uiGroup.add(timeHouse);
+		uiGroup.add(pizzaMan);
 
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		add(strumLineNotes);
@@ -621,8 +621,8 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		uiGroup.cameras = [camHUD];
-		timeHouse.cameras = [camHUD];
-		pizzaMan.cameras = [camHUD];
+		//timeHouse.cameras = [camHUD];
+		//pizzaMan.cameras = [camHUD];
 		//comboGroup.cameras = [camHUD];
 
 		startingSong = true;
@@ -1165,6 +1165,16 @@ class PlayState extends MusicBeatState
 			}
 			--i;
 		}
+	}
+	public function swapStrums():Void
+	{
+		var oppX:Array<Float> = [];
+		var playerX:Array<Float> = [];
+		for (i in opponentStrums) oppX.push(i.x);
+		for (i in playerStrums) playerX.push(i.x);
+		
+		for (i in 0...opponentStrums.length) opponentStrums.members[i].x = playerX[i];
+		for (i in 0...playerStrums.length) playerStrums.members[i].x = oppX[i];
 	}
 
 	public function updateScore(miss:Bool = false)
@@ -2525,15 +2535,20 @@ class PlayState extends MusicBeatState
 			antialias = !isPixelStage;
 		}
 
+		//vloo
+		antialias = false;
+
 		rating.loadGraphic(Paths.image(uiPrefix + daRating.image + uiSuffix));
 		rating.screenCenter();
 		rating.x = placement - 40;
 		rating.y -= 60;
-		rating.scale.x = 0.5 * defaultCamZoom;
 		rating.acceleration.y = 550 * playbackRate * playbackRate;
+		rating.angularVelocity = FlxG.random.int(-20, 20) * playbackRate;
+		rating.angle = FlxG.random.int( -10, 10);
 		rating.velocity.y -= FlxG.random.int(140, 175) * playbackRate;
 		rating.velocity.x -= FlxG.random.int(0, 10) * playbackRate;
 		rating.visible = (!ClientPrefs.data.hideHud && showRating);
+		
 		rating.x += ClientPrefs.data.comboOffset[0];
 		rating.y -= ClientPrefs.data.comboOffset[1];
 		rating.antialiasing = antialias;
@@ -2553,8 +2568,8 @@ class PlayState extends MusicBeatState
 
 		if (!PlayState.isPixelStage)
 		{
-			rating.setGraphicSize(Std.int(rating.width * 0.7));
-			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
+			rating.setGraphicSize(Std.int(rating.width * 0.7) / (defaultCamZoom * 0.4));
+			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7) / (defaultCamZoom * 0.4));
 		}
 		else
 		{
@@ -3196,15 +3211,6 @@ class PlayState extends MusicBeatState
 	{
 		if (SONG.notes[curSection] != null)
 		{
-			if (generatedMusic && !endingSong && !isCameraOnForcedPos)
-				//moveCameraSection();
-
-			// if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)
-			// {
-			// 	FlxG.camera.zoom += 0.015 * camZoomingMult;
-			// 	camHUD.zoom += 0.03 * camZoomingMult;
-			// }
-
 			if (SONG.notes[curSection].changeBPM)
 			{
 				Conductor.bpm = SONG.notes[curSection].bpm;
