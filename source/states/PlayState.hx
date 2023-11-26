@@ -522,11 +522,6 @@ class PlayState extends MusicBeatState
 		pizzaMan.visible = showTime;
 		pizzaMan.updateHitbox();
 
-		uiGroup.add(timeBar);
-		uiGroup.add(timeTxt);
-		uiGroup.add(timeHouse);
-		uiGroup.add(pizzaMan);
-
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		add(strumLineNotes);
 		add(grpNoteSplashes);
@@ -599,6 +594,12 @@ class PlayState extends MusicBeatState
 		iconTrayP2.sprTracker = iconP2;
 		iconTrayP2.xAdd = -30;
 		iconTrayP2.yAdd = 25;
+
+
+		uiGroup.add(timeBar);
+		uiGroup.add(timeTxt);
+		uiGroup.add(timeHouse);
+		uiGroup.add(pizzaMan);
 
 		vlooScoreText = new FlxBitmapText(FlxBitmapFont.fromMonospace(Paths.image('ui/numbers'),'1234567890scr', new FlxPoint(41,65)));
 		vlooScoreText.scrollFactor.set();
