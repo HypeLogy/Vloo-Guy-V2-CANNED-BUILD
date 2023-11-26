@@ -173,6 +173,8 @@ class PlayState extends MusicBeatState
 
 	public var healthBar:Bar;
 	public var timeBar:Bar;
+	public var timeHouse:FlxSprite;
+	public var pizzaMan:FlxSprite;
 	var songPercent:Float = 0;
 
 	public var ratingsData:Array<Rating> = Rating.loadDefault();
@@ -209,6 +211,7 @@ class PlayState extends MusicBeatState
 	public var songMisses:Int = 0;
 	var timeTxt:FlxText;
 	var scoreTxtTween:FlxTween;
+	var timeHouseTween:FlxTween;
 
 	public static var campaignScore:Int = 0;
 	public static var campaignMisses:Int = 0;
@@ -499,13 +502,30 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.data.downScroll) timeTxt.y = FlxG.height - 44;
 		if(ClientPrefs.data.timeBarType == 'Song Name') timeTxt.text = SONG.song;
 
-		timeBar = new Bar(0, timeTxt.y + (timeTxt.height / 4), 'timeBar', function() return songPercent, 0, 1);
+		timeBar = new Bar(5, 125, 'ui/timebar', function() return songPercent, 0, 1, true);
 		timeBar.scrollFactor.set();
-		timeBar.screenCenter(X);
 		timeBar.alpha = 0;
 		timeBar.visible = showTime;
+
+		timeHouse = new FlxSprite(timeBar.x + 650, timeBar.y - 22).loadGraphic(Paths.image('ui/timebar1'));
+		timeHouse.scale.x = 0.75;
+		timeHouse.scale.y = 0.75;
+		timeHouse.alpha = 0;
+		timeHouse.angle = -10;
+		timeHouse.visible = showTime;
+		timeHouse.updateHitbox();
+
+		pizzaMan = new FlxSprite(320, 82).loadGraphic(Paths.image('ui/timebar2'));
+		pizzaMan.scale.x = 0.85;
+		pizzaMan.scale.y = 0.85;
+		pizzaMan.alpha = 0;
+		pizzaMan.visible = showTime;
+		pizzaMan.updateHitbox();
+
 		uiGroup.add(timeBar);
 		uiGroup.add(timeTxt);
+		add(timeHouse);
+		add(pizzaMan);
 
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		add(strumLineNotes);
@@ -543,8 +563,6 @@ class PlayState extends MusicBeatState
 
 		FlxG.worldBounds.set(0, 0, FlxG.width, FlxG.height);
 		moveCameraSection();
-
-
 
 		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : 0.11), 'ui/hpbar', function() return health, 0, 2,true);
 		healthBar.screenCenter(X);
@@ -588,6 +606,8 @@ class PlayState extends MusicBeatState
 		uiGroup.add(vlooScoreText);
 		updateScore(false);
 
+		timeBar.x = vlooScoreText.x + 15;
+
 		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
@@ -601,6 +621,8 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		uiGroup.cameras = [camHUD];
+		timeHouse.cameras = [camHUD];
+		pizzaMan.cameras = [camHUD];
 		//comboGroup.cameras = [camHUD];
 
 		startingSong = true;
@@ -1145,18 +1167,6 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	public function swapStrums():Void
-	{
-		var oppX:Array<Float> = [];
-		var playerX:Array<Float> = [];
-		for (i in opponentStrums) oppX.push(i.x);
-		for (i in playerStrums) playerX.push(i.x);
-		
-		for (i in 0...opponentStrums.length) opponentStrums.members[i].x = playerX[i];
-		for (i in 0...playerStrums.length) playerStrums.members[i].x = oppX[i];
-
-	}
-
 	public function updateScore(miss:Bool = false)
 	{
 		var ret:Dynamic = callOnScripts('preUpdateScore', [miss], true);
@@ -1245,7 +1255,8 @@ class PlayState extends MusicBeatState
 		// Song duration in a float, useful for the time left feature
 		songLength = FlxG.sound.music.length;
 		FlxTween.tween(timeBar, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
-		FlxTween.tween(timeTxt, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
+		FlxTween.tween(timeHouse, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
+		FlxTween.tween(pizzaMan, {alpha: 1}, 0.5, {ease: FlxEase.circOut});
 
 		#if desktop
 		// Updating Discord Rich Presence (with Time Left)
@@ -1637,6 +1648,8 @@ class PlayState extends MusicBeatState
 	{
 		callOnScripts('onUpdate', [elapsed]);
 
+		pizzaMan.x = timeBar.x + (timeBar.width * (FlxMath.remapToRange(timeBar.percent, 0, 100, 0, 100) * 0.01)) - 20; 
+
 		if (chartingMode || debugMode) {
 			if (!Main.debugData.visible) Main.debugData.visible = true;
 			Main.debugData.text = '\n\n\nBotplay: $cpuControlled\nCurStep: $curStep\nCurBeat: $curBeat\nTime: ${FlxStringUtil.formatTime(Math.floor((Conductor.songPosition - ClientPrefs.data.noteOffset)/1000), false)} / ${FlxStringUtil.formatTime(Math.floor(songLength)/1000,false)}';
@@ -1689,6 +1702,10 @@ class PlayState extends MusicBeatState
 		var mult:Float = FlxMath.lerp(1, iconP2.scale.x, FlxMath.bound(1 - (elapsed * 9 * playbackRate), 0, 1));
 		iconP2.scale.set(mult, mult);
 		iconP2.updateHitbox();
+
+		var mult:Float = FlxMath.lerp(0.85, pizzaMan.scale.x, FlxMath.bound(1 - (elapsed * 9 * playbackRate), 0, 1));
+		pizzaMan.scale.set(mult, mult);
+		pizzaMan.updateHitbox();
 
 		var iconOffset:Int = 26;
 		if (healthBar.bounds.max != null) {
@@ -2507,16 +2524,13 @@ class PlayState extends MusicBeatState
 			if (PlayState.isPixelStage) uiSuffix = '-pixel';
 			antialias = !isPixelStage;
 		}
-		//vloo
-		antialias = false;
 
 		rating.loadGraphic(Paths.image(uiPrefix + daRating.image + uiSuffix));
 		rating.screenCenter();
 		rating.x = placement - 40;
 		rating.y -= 60;
+		rating.scale.x = 0.5 * defaultCamZoom;
 		rating.acceleration.y = 550 * playbackRate * playbackRate;
-		rating.angularVelocity = FlxG.random.int(-20, 20) * playbackRate;
-		rating.angle = FlxG.random.int( -10, 10);
 		rating.velocity.y -= FlxG.random.int(140, 175) * playbackRate;
 		rating.velocity.x -= FlxG.random.int(0, 10) * playbackRate;
 		rating.visible = (!ClientPrefs.data.hideHud && showRating);
@@ -2539,8 +2553,8 @@ class PlayState extends MusicBeatState
 
 		if (!PlayState.isPixelStage)
 		{
-			rating.setGraphicSize(Std.int(rating.width * 0.7) / (defaultCamZoom * 0.4));
-			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7) / (defaultCamZoom * 0.4));
+			rating.setGraphicSize(Std.int(rating.width * 0.7));
+			comboSpr.setGraphicSize(Std.int(comboSpr.width * 0.7));
 		}
 		else
 		{
@@ -3134,9 +3148,25 @@ class PlayState extends MusicBeatState
 
 		iconP1.scale.set(1.2, 1.2);
 		iconP2.scale.set(1.2, 1.2);
+		pizzaMan.scale.set(1.05, 0.95);
 
+		if(timeHouseTween != null)
+		{
+		timeHouseTween = FlxTween.tween(timeHouse, {angle: 10}, 0.00001, {
+			onComplete: function(twn:FlxTween) {
+				timeHouseTween = null;
+			}});
+		};
+		else {
+		timeHouseTween = FlxTween.tween(timeHouse, {angle: -10}, 0.00001, {
+			onComplete: function(twn:FlxTween) {
+				timeHouseTween != null;
+			}});
+		};
+	
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();
+		pizzaMan.updateHitbox();
 
 		characterBopper(curBeat);
 
@@ -3166,9 +3196,14 @@ class PlayState extends MusicBeatState
 	{
 		if (SONG.notes[curSection] != null)
 		{
-			//if (generatedMusic && !endingSong && !isCameraOnForcedPos)
+			if (generatedMusic && !endingSong && !isCameraOnForcedPos)
 				//moveCameraSection();
 
+			// if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)
+			// {
+			// 	FlxG.camera.zoom += 0.015 * camZoomingMult;
+			// 	camHUD.zoom += 0.03 * camZoomingMult;
+			// }
 
 			if (SONG.notes[curSection].changeBPM)
 			{
