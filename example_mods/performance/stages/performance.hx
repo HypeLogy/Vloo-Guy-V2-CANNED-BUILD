@@ -9,4 +9,5 @@ function onCreatePost(){
     game.add(curtains);
 
     game.swapStrums();
+    game.camOffset = 5;
 }

@@ -1716,7 +1716,7 @@ class PlayState extends MusicBeatState
 
 		var mult:Float = FlxMath.lerp(0.85, pizzaMan.scale.x, FlxMath.bound(1 - (elapsed * 9 * playbackRate), 0, 1));
 		pizzaMan.scale.set(mult, mult);
-		pizzaMan.updateHitbox();
+		//pizzaMan.updateHitbox();
 
 		var iconOffset:Int = 26;
 		if (healthBar.bounds.max != null) {
