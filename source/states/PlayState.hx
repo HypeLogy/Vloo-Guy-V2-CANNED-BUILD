@@ -211,7 +211,7 @@ class PlayState extends MusicBeatState
 	public var songMisses:Int = 0;
 	var timeTxt:FlxText;
 	var scoreTxtTween:FlxTween;
-	var timeHouseTween:FlxTween;
+
 
 	public static var campaignScore:Int = 0;
 	public static var campaignMisses:Int = 0;
@@ -502,25 +502,27 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.data.downScroll) timeTxt.y = FlxG.height - 44;
 		if(ClientPrefs.data.timeBarType == 'Song Name') timeTxt.text = SONG.song;
 
-		timeBar = new Bar(5, 125, 'ui/timebar', function() return songPercent, 0, 1, true);
+		timeBar = new Bar(0,0, 'ui/timebar', function() return songPercent, 0, 1, true);
+		timeBar.screenCenter(X);
+		timeBar.y = ClientPrefs.data.downScroll ? FlxG.height - timeBar.height - 10 : 30;
 		timeBar.scrollFactor.set();
 		timeBar.alpha = 0;
 		timeBar.visible = showTime;
 
-		timeHouse = new FlxSprite(timeBar.x + 650, timeBar.y - 22).loadGraphic(Paths.image('ui/timebar1'));
-		timeHouse.scale.x = 0.75;
-		timeHouse.scale.y = 0.75;
+		timeHouse = new FlxSprite().loadGraphic(Paths.image('ui/timebar1'));
+		timeHouse.setPosition(timeBar.x + timeBar.width + 5, timeHouse.centerOnSprite(timeBar,Y).y);
+		timeHouse.scale.set(0.75,0.75);
+		timeHouse.updateHitbox();
 		timeHouse.alpha = 0;
 		timeHouse.angle = -10;
 		timeHouse.visible = showTime;
-		timeHouse.updateHitbox();
 
-		pizzaMan = new FlxSprite(320, 82).loadGraphic(Paths.image('ui/timebar2'));
-		pizzaMan.scale.x = 0.85;
-		pizzaMan.scale.y = 0.85;
+		pizzaMan = new FlxSprite().loadGraphic(Paths.image('ui/timebar2'));
+		pizzaMan.scale.set(1.05, 0.95);
+		pizzaMan.updateHitbox();
 		pizzaMan.alpha = 0;
 		pizzaMan.visible = showTime;
-		pizzaMan.updateHitbox();
+		pizzaMan.y = pizzaMan.centerOnSprite(timeBar,Y).y - 10;
 
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		add(strumLineNotes);
@@ -607,7 +609,7 @@ class PlayState extends MusicBeatState
 		uiGroup.add(vlooScoreText);
 		updateScore(false);
 
-		timeBar.x = vlooScoreText.x + 15;
+		//timeBar.x = vlooScoreText.x + 15;
 
 		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOTPLAY", 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -622,8 +624,6 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
 		uiGroup.cameras = [camHUD];
-		//timeHouse.cameras = [camHUD];
-		//pizzaMan.cameras = [camHUD];
 		//comboGroup.cameras = [camHUD];
 
 		startingSong = true;
@@ -1499,7 +1499,7 @@ class PlayState extends MusicBeatState
 	private function generateStaticArrows(player:Int):Void
 	{
 		var strumLineX:Float = ClientPrefs.data.middleScroll ? STRUM_X_MIDDLESCROLL : STRUM_X;
-		var strumLineY:Float = ClientPrefs.data.downScroll ? (FlxG.height - 150) : 50;
+		var strumLineY:Float = ClientPrefs.data.downScroll ? (FlxG.height - 160) : 60;
 		for (i in 0...4)
 		{
 			// FlxG.log.add(i);
@@ -1659,7 +1659,9 @@ class PlayState extends MusicBeatState
 	{
 		callOnScripts('onUpdate', [elapsed]);
 
-		pizzaMan.x = timeBar.x + (timeBar.width * (FlxMath.remapToRange(timeBar.percent, 0, 100, 0, 100) * 0.01)) - 20; 
+		//pizzaMan.x = timeBar.x + (timeBar.width * (FlxMath.remapToRange(timeBar.percent, 0, 100, 0, 100) * 0.01)) - 20; 
+
+		pizzaMan.x = FlxMath.remapToRange(timeBar.percent,0,100,timeBar.x -(pizzaMan.width/2),timeBar.x + timeBar.width - (pizzaMan.width/2));
 
 		if (chartingMode || debugMode) {
 			if (!Main.debugData.visible) Main.debugData.visible = true;
@@ -3166,19 +3168,23 @@ class PlayState extends MusicBeatState
 		iconP2.scale.set(1.2, 1.2);
 		pizzaMan.scale.set(1.05, 0.95);
 
-		if(timeHouseTween != null)
-		{
-		timeHouseTween = FlxTween.tween(timeHouse, {angle: 10}, 0.00001, {
-			onComplete: function(twn:FlxTween) {
-				timeHouseTween = null;
-			}});
-		};
-		else {
-		timeHouseTween = FlxTween.tween(timeHouse, {angle: -10}, 0.00001, {
-			onComplete: function(twn:FlxTween) {
-				timeHouseTween != null;
-			}});
-		};
+		if (curBeat % 2 == 0) timeHouse.angle = 10;
+		else timeHouse.angle = -10;
+		
+
+		// if(timeHouseTween != null)
+		// {
+		// timeHouseTween = FlxTween.tween(timeHouse, {angle: 10}, 0.00001, {
+		// 	onComplete: function(twn:FlxTween) {
+		// 		timeHouseTween = null;
+		// 	}});
+		// };
+		// else {
+		// timeHouseTween = FlxTween.tween(timeHouse, {angle: -10}, 0.00001, {
+		// 	onComplete: function(twn:FlxTween) {
+		// 		timeHouseTween != null;
+		// 	}});
+		// };
 	
 		iconP1.updateHitbox();
 		iconP2.updateHitbox();
