@@ -593,7 +593,7 @@ class PlayState extends MusicBeatState
 		iconP2.visible = !ClientPrefs.data.hideHud;
 		iconP2.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP2);
-		iconTrayP2.sprTracker = iconP2;
+		iconTrayP2.sprTracker = iconP2; //whoops these need to be hooked to hp bar not icons
 		iconTrayP2.xAdd = -30;
 		iconTrayP2.yAdd = 25;
 
