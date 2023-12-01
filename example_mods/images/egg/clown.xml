@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="clown.png">
+<SubTexture name="clown idle0000" x="369" y="0" width="373" height="411" frameX="-11" frameY="-1" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0001" x="369" y="0" width="373" height="411" frameX="-11" frameY="-1" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0002" x="0" y="0" width="369" height="413" frameX="-14" frameY="0" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0003" x="0" y="0" width="369" height="413" frameX="-14" frameY="0" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0004" x="742" y="0" width="375" height="406" frameX="-9" frameY="-1" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0005" x="742" y="0" width="375" height="406" frameX="-9" frameY="-1" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0006" x="0" y="413" width="382" height="403" frameX="-4" frameY="-3" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0007" x="0" y="413" width="382" height="403" frameX="-4" frameY="-3" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0008" x="382" y="413" width="386" height="401" frameX="0" frameY="-4" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0009" x="382" y="413" width="386" height="401" frameX="0" frameY="-4" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0010" x="1117" y="0" width="386" height="401" frameX="0" frameY="-4" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0011" x="1117" y="0" width="386" height="401" frameX="0" frameY="-4" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0012" x="382" y="413" width="386" height="401" frameX="0" frameY="-4" frameWidth="386" frameHeight="413" />
+<SubTexture name="clown idle0013" x="382" y="413" width="386" height="401" frameX="0" frameY="-4" frameWidth="386" frameHeight="413" />
+</TextureAtlas>

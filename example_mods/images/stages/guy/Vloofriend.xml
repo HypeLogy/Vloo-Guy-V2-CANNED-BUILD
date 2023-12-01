@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Vloofriend.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Vloo guy0000" x="172" y="182" width="122" height="227" frameX="-204" frameY="-168" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="Vloo guy0001" x="0" y="235" width="134" height="236" frameX="-191" frameY="-168" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="Vloo guy0002" x="0" y="0" width="172" height="235" frameX="-194" frameY="-184" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="Vloo guy0003" x="172" y="0" width="158" height="182" frameX="-160" frameY="-258" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="Vloo guy0004" x="330" y="0" width="131" height="193" frameX="-178" frameY="-250" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="Vloo guy0005" x="330" y="193" width="125" height="186" frameX="-184" frameY="-257" frameWidth="640" frameHeight="640"/>
+	<SubTexture name="Vloo guy0006" x="461" y="0" width="122" height="185" frameX="-187" frameY="-257" frameWidth="640" frameHeight="640"/>
+</TextureAtlas>

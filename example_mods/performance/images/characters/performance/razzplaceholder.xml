@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="razzplaceholder.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="idle00000" x="0" y="0" width="191" height="169"/>
+	<SubTexture name="idle00001" x="191" y="0" width="191" height="169"/>
+	<SubTexture name="idle00002" x="382" y="0" width="191" height="169"/>
+	<SubTexture name="idle00003" x="573" y="0" width="191" height="169"/>
+	<SubTexture name="idle00004" x="0" y="169" width="191" height="169"/>
+	<SubTexture name="idle00005" x="382" y="0" width="191" height="169"/>
+	<SubTexture name="left00000" x="191" y="169" width="191" height="169"/>
+	<SubTexture name="left00001" x="382" y="169" width="191" height="169"/>
+	<SubTexture name="right00000" x="573" y="169" width="191" height="169"/>
+	<SubTexture name="right00001" x="0" y="338" width="191" height="169"/>
+	<SubTexture name="up00000" x="191" y="338" width="191" height="169"/>
+	<SubTexture name="up00001" x="382" y="0" width="191" height="169"/>
+	<SubTexture name="down00000" x="382" y="338" width="191" height="169"/>
+	<SubTexture name="down00001" x="382" y="0" width="191" height="169"/>
+</TextureAtlas>

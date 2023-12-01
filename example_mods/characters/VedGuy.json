@@ -3,45 +3,45 @@
 		{
 			"loop": false,
 			"offsets": [
-				0,
-				1
-			],
-			"anim": "idle",
-			"fps": 12,
-			"name": "idle",
-			"indices": []
-		},
-		{
-			"loop": false,
-			"offsets": [
-				0,
-				1
+				210,
+				80
 			],
 			"anim": "singLEFT",
-			"fps": 12,
-			"name": "left",
+			"fps": 24,
+			"name": "LEFT",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				0,
-				0
+				240,
+				171
 			],
 			"anim": "singDOWN",
-			"fps": 12,
-			"name": "down",
+			"fps": 24,
+			"name": "DOWN",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				0,
-				0
+				146,
+				260
 			],
 			"anim": "singUP",
-			"fps": 12,
-			"name": "up",
+			"fps": 24,
+			"name": "UP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				194,
+				187
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RIGHT",
 			"indices": []
 		},
 		{
@@ -50,29 +50,29 @@
 				0,
 				0
 			],
-			"anim": "singRIGHT",
-			"fps": 12,
-			"name": "right",
+			"anim": "idle",
+			"fps": 24,
+			"name": "IDLE",
 			"indices": []
 		}
 	],
 	"no_antialiasing": true,
-	"image": "characters/Ved",
+	"image": "characters/VedGuy",
 	"position": [
-		0,
-		0
+		60,
+		470
 	],
-	"healthicon": "face",
+	"healthicon": "mew",
 	"flip_x": false,
 	"healthbar_colors": [
-		161,
-		161,
-		161
+		232,
+		48,
+		124
 	],
 	"camera_position": [
-		30,
-		30
+		-300,
+		-320
 	],
 	"sing_duration": 6.1,
-	"scale": 1
+	"scale": 1.2
 }

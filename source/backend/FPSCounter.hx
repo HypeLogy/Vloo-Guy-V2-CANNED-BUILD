@@ -1,5 +1,7 @@
 package backend;
 
+import openfl.display.DisplayObjectContainer;
+
 import openfl.Memory;
 import haxe.Timer;
 import openfl.events.Event;
@@ -50,7 +52,7 @@ class FPSCounter extends TextField
 		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat("_sans", 14, color);
+		defaultTextFormat = new TextFormat(Paths.font("vcr.ttf"), 16, color);
 		autoSize = LEFT;
 		multiline = true;
 		text = "FPS: ";
@@ -58,6 +60,7 @@ class FPSCounter extends TextField
 		cacheCount = 0;
 		currentTime = 0;
 		times = [];
+
 
 		#if openfl
 		FlxG.signals.postStateSwitch.add(reset);
@@ -91,6 +94,8 @@ class FPSCounter extends TextField
 
 		if (currentCount != cacheCount /*&& visible*/)
 		{
+
+
 			text = "FPS: " + currentFPS;
 			var memoryMegas:Float = 0;
 
@@ -98,7 +103,7 @@ class FPSCounter extends TextField
 			#if openfl
 			memoryMegas = FlxMath.roundDecimal(System.totalMemory / 1000000, 1);
 			if (memoryMegas > memPeak) memPeak = memoryMegas;
-			text += "\nMemory: " + memoryMegas + ' / Peak: ' + memPeak + " MB";
+			text += " • Mem: " + memoryMegas + ' MB / MemPeak: ' + memPeak + " MB";
 			#end
 
 			textColor = 0xFFFFFFFF;
@@ -107,6 +112,7 @@ class FPSCounter extends TextField
 				textColor = 0xFFFF0000;
 			}
 
+			
 			#if (gl_stats && !disable_cffi && (!html5 || !canvas))
 			text += "\ntotalDC: " + Context3DStats.totalDrawCalls();
 			text += "\nstageDC: " + Context3DStats.contextDrawCalls(DrawCallContext.STAGE);
@@ -115,6 +121,10 @@ class FPSCounter extends TextField
 
 			text += "\n";
 		}
+		
+		#if debug
+		//text += ' • ' +  Type.getClassName(Type.getClass(MusicBeatState.currentState));
+		#end
 
 		cacheCount = currentCount;
 	}

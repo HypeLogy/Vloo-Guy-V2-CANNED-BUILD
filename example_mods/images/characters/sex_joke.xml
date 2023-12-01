@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="sex joke.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="wake up0000" x="100" y="100" width="1671" height="1416"/>
+	<SubTexture name="wake up0001" x="100" y="100" width="1671" height="1416"/>
+	<SubTexture name="wake up0002" x="1776" y="100" width="1671" height="1416"/>
+	<SubTexture name="wake up0003" x="1776" y="100" width="1671" height="1416"/>
+	<SubTexture name="wake up0004" x="3452" y="100" width="1671" height="1416"/>
+	<SubTexture name="wake up0005" x="3452" y="100" width="1671" height="1416"/>
+	<SubTexture name="wake up0006" x="5128" y="100" width="1671" height="1416"/>
+	<SubTexture name="wake up0007" x="5128" y="100" width="1671" height="1416"/>
+	<SubTexture name="wake up0008" x="100" y="1521" width="1671" height="1416"/>
+	<SubTexture name="wake up0009" x="100" y="1521" width="1671" height="1416"/>
+	<SubTexture name="wake up0010" x="1776" y="1521" width="1671" height="1416"/>
+	<SubTexture name="wake up0011" x="1776" y="1521" width="1671" height="1416"/>
+	<SubTexture name="wake up0012" x="3452" y="1521" width="1671" height="1416"/>
+	<SubTexture name="wake up0013" x="3452" y="1521" width="1671" height="1416"/>
+	<SubTexture name="wake up0014" x="5128" y="1521" width="1671" height="1416"/>
+	<SubTexture name="wake up0015" x="5128" y="1521" width="1671" height="1416"/>
+	<SubTexture name="wake up0016" x="100" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0017" x="100" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0018" x="1776" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0019" x="1776" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0020" x="3452" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0021" x="3452" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0022" x="5128" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0023" x="5128" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0024" x="5128" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0025" x="5128" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0026" x="5128" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0027" x="5128" y="2942" width="1671" height="1416"/>
+	<SubTexture name="wake up0028" x="100" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0029" x="100" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0030" x="100" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0031" x="1776" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0032" x="1776" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0033" x="1776" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0034" x="100" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0035" x="100" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0036" x="100" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0037" x="1776" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0038" x="1776" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0039" x="1776" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0040" x="3452" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0041" x="3452" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0042" x="3452" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0043" x="5128" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0044" x="5128" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0045" x="5128" y="4363" width="1671" height="1416"/>
+	<SubTexture name="wake up0046" x="100" y="5784" width="1671" height="1416"/>
+	<SubTexture name="wake up0047" x="100" y="5784" width="1671" height="1416"/>
+	<SubTexture name="wake up0048" x="100" y="5784" width="1671" height="1416"/>
+	<SubTexture name="wake up0049" x="100" y="5784" width="1671" height="1416"/>
+	<SubTexture name="wake up0050" x="100" y="5784" width="1671" height="1416"/>
+	<SubTexture name="wake up0051" x="100" y="5784" width="1671" height="1416"/>
+	<SubTexture name="wake up0052" x="100" y="5784" width="1671" height="1416"/>
+	<SubTexture name="wake up0053" x="100" y="5784" width="1671" height="1416"/>
+	<SubTexture name="wake up0054" x="100" y="5784" width="1671" height="1416"/>
+</TextureAtlas>
