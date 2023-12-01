@@ -62,12 +62,12 @@
 		50,
 		-10
 	],
-	"healthicon": "prange",
+	"healthicon": "yedguy",
 	"flip_x": false,
 	"healthbar_colors": [
-		144,
-		96,
-		0
+		185,
+		34,
+		12
 	],
 	"camera_position": [
 		-160,

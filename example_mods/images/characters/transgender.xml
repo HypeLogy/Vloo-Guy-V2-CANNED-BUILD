@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="the purple one.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="L0000" x="100" y="100" width="345" height="247"/>
+	<SubTexture name="L0001" x="100" y="100" width="345" height="247"/>
+	<SubTexture name="L0002" x="450" y="100" width="345" height="247"/>
+	<SubTexture name="L0003" x="450" y="100" width="345" height="247"/>
+	<SubTexture name="L0004" x="800" y="100" width="345" height="247"/>
+	<SubTexture name="L0005" x="800" y="100" width="345" height="247"/>
+	<SubTexture name="L0006" x="1150" y="100" width="345" height="247"/>
+	<SubTexture name="L0007" x="1150" y="100" width="345" height="247"/>
+	<SubTexture name="L0008" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="L0009" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="L0010" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="L0011" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="L0012" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="L0013" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="R0000" x="100" y="352" width="345" height="247"/>
+	<SubTexture name="R0001" x="100" y="352" width="345" height="247"/>
+	<SubTexture name="R0002" x="450" y="352" width="345" height="247"/>
+	<SubTexture name="R0003" x="450" y="352" width="345" height="247"/>
+	<SubTexture name="R0004" x="800" y="352" width="345" height="247"/>
+	<SubTexture name="R0005" x="800" y="352" width="345" height="247"/>
+	<SubTexture name="R0006" x="1150" y="352" width="345" height="247"/>
+	<SubTexture name="R0007" x="1150" y="352" width="345" height="247"/>
+	<SubTexture name="R0008" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="R0009" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="R0010" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="R0011" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="R0012" x="1500" y="100" width="345" height="247"/>
+	<SubTexture name="R0013" x="1500" y="100" width="345" height="247"/>
+</TextureAtlas>

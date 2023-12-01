@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="transyed.png">
+<SubTexture name="trans0000" x="222" y="0" width="99" height="182" frameX="-239" frameY="-132" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0001" x="321" y="0" width="104" height="179" frameX="-240" frameY="-135" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0002" x="425" y="171" width="104" height="170" frameX="-242" frameY="-145" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0003" x="107" y="196" width="97" height="173" frameX="-240" frameY="-142" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0004" x="0" y="196" width="107" height="175" frameX="-221" frameY="-140" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0005" x="671" y="150" width="120" height="117" frameX="-216" frameY="-198" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0006" x="563" y="150" width="108" height="121" frameX="-227" frameY="-195" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0007" x="204" y="196" width="174" height="171" frameX="-240" frameY="-143" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0008" x="425" y="0" width="138" height="171" frameX="-238" frameY="-143" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0009" x="563" y="0" width="247" height="150" frameX="-90" frameY="-174" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0010" x="0" y="371" width="313" height="171" frameX="-29" frameY="-164" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0011" x="313" y="371" width="137" height="151" frameX="-205" frameY="-164" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0012" x="341" y="542" width="334" height="126" frameX="-29" frameY="-209" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0013" x="563" y="271" width="149" height="102" frameX="-225" frameY="-207" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0014" x="0" y="681" width="337" height="126" frameX="-26" frameY="-209" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0015" x="0" y="542" width="341" height="139" frameX="-33" frameY="-207" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0016" x="0" y="0" width="112" height="196" frameX="-227" frameY="-118" frameWidth="614" frameHeight="439" />
+<SubTexture name="trans0017" x="112" y="0" width="110" height="196" frameX="-217" frameY="-118" frameWidth="614" frameHeight="439" />
+</TextureAtlas>

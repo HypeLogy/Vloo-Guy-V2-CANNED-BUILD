@@ -1,0 +1,45 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				90,
+				90
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "R"
+		},
+		{
+			"offsets": [
+				90,
+				90
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "L"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/lesbian",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		-90,
+		60
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

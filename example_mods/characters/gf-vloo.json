@@ -3,28 +3,28 @@
 		{
 			"loop": false,
 			"offsets": [
-				0,
-				0
+				90,
+				75
 			],
 			"anim": "danceRight",
 			"fps": 12,
-			"name": "right",
+			"name": "R",
 			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				0,
-				0
+				90,
+				75
 			],
 			"anim": "danceLeft",
 			"fps": 12,
-			"name": "left",
+			"name": "L",
 			"indices": []
 		}
 	],
 	"no_antialiasing": true,
-	"image": "characters/vloogf",
+	"image": "characters/transgender",
 	"position": [
 		0,
 		0

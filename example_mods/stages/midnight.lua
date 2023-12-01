@@ -1,53 +1,53 @@
 function onCreate()
-	makeLuaSprite('neds2','stages/midnight/neds', 0, 40);
-	scaleObject('neds2', 0.7, 0.7);
-	updateHitbox('neds2');
-	setProperty('neds2.antialiasing', false);
-      setObjectOrder('neds2', 0)
-	addLuaSprite('neds2',false);
-
 	makeLuaSprite('back','stages/midnight/sky', 0, 0);
-	scaleObject('back', 0.7, 0.7);
 	updateHitbox('back');
 	setProperty('back.antialiasing', false);
       setObjectOrder('back', 1)
+      scaleObject('back', 0.8, 0.8)
 	addLuaSprite('back',false);
 
-	makeLuaSprite('city','stages/midnight/city', 0, 0);
-	scaleObject('city', 0.7, 0.7);
+	makeLuaSprite('city','stages/midnight/hills', 0, 0);
 	updateHitbox('city');
 	setProperty('city.antialiasing', false);
       setObjectOrder('city', 2)
+      scaleObject('city', 0.8, 0.8)
 	addLuaSprite('city',false);
 
 	makeLuaSprite('neds','stages/midnight/neds', 0, 0);
-	scaleObject('neds', 0.7, 0.7);
 	updateHitbox('neds');
 	setProperty('neds.antialiasing', false);
       setObjectOrder('neds', 3)
+      scaleObject('neds', 0.8, 0.8)
 	addLuaSprite('neds',false);
 
-	makeLuaSprite('nedsfront','stages/midnight/front', 0, 0);
-	scaleObject('nedsfront', 0.7, 0.7);
+	makeLuaSprite('nedsfront','stages/midnight/nedsfront', 0, 0);
 	updateHitbox('nedsfront');
 	setProperty('nedsfront.antialiasing', false);
       setObjectOrder('nedsfront', 4)
+      scaleObject('nedsfront', 0.8, 0.8)
 	addLuaSprite('nedsfront',false);
 
-	makeLuaSprite('car','stages/midnight/car', 0, 40);
-	scaleObject('car', 0.7, 0.7);
+	makeLuaSprite('car','stages/midnight/clouds', 0, 0);
 	updateHitbox('car');
 	setProperty('car.antialiasing', false);
-      setObjectOrder('car', 8)
+      setObjectOrder('car', 3)
+      scaleObject('car', 0.8, 0.8)
 	addLuaSprite('car',false);
 
-	makeAnimatedLuaSprite('rain','stages/midnight/rain', 320, 40);
+	makeLuaSprite('ar','stages/midnight/bush', 0, 0);
+	updateHitbox('ar');
+	setProperty('ar.antialiasing', false);
+      scaleObject('ar', 0.8, 0.8)
+      setObjectOrder('ar', 9)
+	addLuaSprite('ar',false);
+
+	makeAnimatedLuaSprite('rain','stages/midnight/rain', 50, 0);
       addAnimationByPrefix('rain', 'bump', 'rain', 24, true)
 	scaleObject('rain', 2, 2);
       setProperty('rain.alpha', 0.5)
 	updateHitbox('rain');
 	setProperty('rain.antialiasing', false);
-      setObjectOrder('rain', 9)
+      setObjectOrder('rain', 10)
 	addLuaSprite('rain',false);
 
       setObjectOrder('gfGroup', 5)

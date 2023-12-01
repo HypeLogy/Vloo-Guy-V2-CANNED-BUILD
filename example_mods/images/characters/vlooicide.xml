@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="vlooicide.png">
+<SubTexture name="right0000" x="224" y="0" width="103" height="107" frameX="-13" frameY="-9" frameWidth="131" frameHeight="125" />
+<SubTexture name="left0000" x="0" y="131" width="107" height="79" frameX="-51" frameY="-14" frameWidth="178" frameHeight="109" />
+<SubTexture name="down0000" x="107" y="131" width="152" height="71" frameX="-16" frameY="-36" frameWidth="195" frameHeight="133" />
+<SubTexture name="up0000" x="0" y="0" width="113" height="131" frameX="-19" frameY="-1" frameWidth="155" frameHeight="150" />
+<SubTexture name="idle0000" x="113" y="0" width="111" height="109" frameX="-25" frameY="-14" frameWidth="174" frameHeight="146" />
+</TextureAtlas>

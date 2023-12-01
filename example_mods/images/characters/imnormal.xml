@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="imnormal.png">
+<SubTexture name="up0000" x="0" y="0" width="76" height="99" frameX="-33" frameY="-30" frameWidth="132" frameHeight="139" />
+<SubTexture name="right0000" x="76" y="0" width="71" height="95" frameX="-51" frameY="-30" frameWidth="142" frameHeight="171" />
+<SubTexture name="left0000" x="0" y="99" width="88" height="87" frameX="-41" frameY="-25" frameWidth="167" frameHeight="144" />
+<SubTexture name="down0000" x="198" y="0" width="111" height="83" frameX="-29" frameY="-40" frameWidth="169" frameHeight="161" />
+<SubTexture name="idle0000" x="147" y="0" width="51" height="91" frameX="-13" frameY="-23" frameWidth="96" frameHeight="137" />
+</TextureAtlas>
