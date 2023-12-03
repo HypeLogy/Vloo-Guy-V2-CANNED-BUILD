@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="birthbar.png">
+<SubTexture name="i0000" x="0" y="134" width="531" height="132" frameX="-1" frameY="-2" frameWidth="512" frameHeight="114" />
+<SubTexture name="i0001" x="0" y="266" width="531" height="127" frameX="-1" frameY="-7" frameWidth="512" frameHeight="114" />
+<SubTexture name="i0002" x="0" y="0" width="531" height="134" frameX="-1" frameY="0" frameWidth="512" frameHeight="114" />
+</TextureAtlas>

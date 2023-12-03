@@ -19,17 +19,27 @@ class Bar extends FlxSpriteGroup
 	public var barHeight(default, set):Int = 1;
 	public var barOffset:FlxPoint = new FlxPoint(3, 3);
 
-	public function new(x:Float, y:Float, image:String = 'healthBar', valueFunction:Void->Float = null, boundX:Float = 0, boundY:Float = 1, ?imageBar:Bool = false)
+	public function new(x:Float, y:Float, image:String = 'healthBar', valueFunction:Void->Float = null, boundX:Float = 0, boundY:Float = 1, ?imageBar:Bool = false,animated:Bool = false)
 	{
 		super(x, y);
 		
 		this.valueFunction = valueFunction;
 		setBounds(boundX, boundY);
-		
-		bg = new FlxSprite().loadGraphic(Paths.image(image));
+		if (animated) {
+			bg = new FlxSprite().loadFrames(image);
+			bg.animation.addByPrefix('i','i',12);
+			bg.animation.play('i');
+
+		}
+		else {
+			bg = new FlxSprite().loadGraphic(Paths.image(image));
+		}
+
+
+
 		//bg.antialiasing = ClientPrefs.data.antialiasing;
-		barWidth = Std.int(bg.width - 6);
-		barHeight = Std.int(bg.height - 6);
+		barWidth = Std.int(bg.width);
+		barHeight = Std.int(bg.height);
 
 		leftBar = new FlxSprite().makeGraphic(Std.int(bg.width), Std.int(bg.height), FlxColor.WHITE);
 		if (imageBar)

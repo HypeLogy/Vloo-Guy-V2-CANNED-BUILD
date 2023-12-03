@@ -526,7 +526,7 @@ class PlayState extends MusicBeatState
 
 		strumLineNotes = new FlxTypedGroup<StrumNote>();
 		add(strumLineNotes);
-		add(grpNoteSplashes);
+		//add(grpNoteSplashes);
 
 		if(ClientPrefs.data.timeBarType == 'Song Name')
 		{
@@ -561,8 +561,15 @@ class PlayState extends MusicBeatState
 		FlxG.worldBounds.set(0, 0, FlxG.width, FlxG.height);
 		moveCameraSection();
 
-		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : 0.11), 'ui/hpbar', function() return health, 0, 2,true);
-		healthBar.screenCenter(X);
+		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : -0.05), 'ui/birthbar', function() return health, 0, 2,true,true);
+		// for (i in healthBar.members) {
+		// 	i.setScale(1.5);
+		// }
+		healthBar.scale.set(1.5,1.5);
+		healthBar.updateHitbox();
+
+		//healthBar.screenCenter(X);
+
 		healthBar.leftToRight = false;
 		healthBar.scrollFactor.set();
 		healthBar.visible = !ClientPrefs.data.hideHud;
@@ -576,11 +583,11 @@ class PlayState extends MusicBeatState
 		iconTrayP1.antialiasing = false;
 		iconTrayP2.antialiasing = false;	
 
-		uiGroup.add(iconTrayP1);
-		uiGroup.add(iconTrayP2);
+		//uiGroup.add(iconTrayP1);
+		//uiGroup.add(iconTrayP2);
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
-		iconP1.setPosition(healthBar.x + healthBar.width - 10,healthBar.y - 75);
+		iconP1.setPosition(healthBar.x + healthBar.width + 375,healthBar.y + 80);
 		iconP1.visible = !ClientPrefs.data.hideHud;
 		iconP1.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP1);
@@ -589,7 +596,7 @@ class PlayState extends MusicBeatState
 		iconTrayP1.yAdd = 25;
 
 		iconP2 = new HealthIcon(dad.healthIcon, false);
-		iconP2.setPosition(healthBar.x - iconP2.width + 10,healthBar.y - 75);
+		iconP2.setPosition(healthBar.x + healthBar.width -250,healthBar.y + 80);
 		iconP2.visible = !ClientPrefs.data.hideHud;
 		iconP2.alpha = ClientPrefs.data.healthBarAlpha;
 		uiGroup.add(iconP2);
@@ -2465,7 +2472,7 @@ class PlayState extends MusicBeatState
 	public var totalNotesHit:Float = 0.0;
 
 	public var showCombo:Bool = false;
-	public var showComboNum:Bool = true;
+	public var showComboNum:Bool = false;
 	public var showRating:Bool = true;
 
 	// Stores Ratings and Combo Sprites in a group
