@@ -1,68 +1,68 @@
 {
 	"animations": [
 		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "right",
+			"indices": []
+		},
+		{
 			"offsets": [
 				0,
 				0
 			],
 			"indices": [],
-			"fps": 12,
+			"fps": 8,
 			"anim": "idle",
 			"loop": false,
 			"name": "idle"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 12,
-			"anim": "singLEFT",
-			"loop": false,
-			"name": "left"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 12,
-			"anim": "singDOWN",
-			"loop": false,
-			"name": "down"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 12,
-			"anim": "singUP",
-			"loop": false,
-			"name": "up"
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
-			"indices": [],
-			"fps": 12,
-			"anim": "singRIGHT",
-			"loop": false,
-			"name": "right"
 		}
 	],
-	"no_antialiasing": false,
+	"no_antialiasing": true,
 	"image": "characters/nedzfan",
 	"position": [
 		0,
 		0
 	],
-	"healthicon": "face",
+	"healthicon": "nedzfan",
 	"flip_x": false,
 	"healthbar_colors": [
 		161,

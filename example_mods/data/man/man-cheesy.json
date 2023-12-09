@@ -1,7 +1,7 @@
 {
 	"song": {
-		"player1": "jackass",
-		"gfVersion": "gf",
+		"player1": "bfvloo",
+		"gfVersion": "beth",
 		"notes": [
 			{
 				"sectionBeats": 4,
@@ -7086,7 +7086,7 @@
 			}
 		],
 		"events": [],
-		"player2": "mann",
+		"player2": "nedzfan",
 		"splashSkin": "noteSplashes",
 		"song": "man",
 		"needsVoices": true,

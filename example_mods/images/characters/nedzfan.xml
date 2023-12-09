@@ -1,16 +1,16 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="nedzfan.png">
-<SubTexture name="idle0000" x="119" y="358" width="126" height="130" frameX="-40" frameY="-113" frameWidth="260" frameHeight="296" />
-<SubTexture name="idle0001" x="0" y="358" width="119" height="136" frameX="-45" frameY="-107" frameWidth="260" frameHeight="296" />
-<SubTexture name="idle0002" x="255" y="0" width="94" height="143" frameX="-75" frameY="-100" frameWidth="260" frameHeight="296" />
-<SubTexture name="idle0003" x="349" y="0" width="93" height="143" frameX="-75" frameY="-100" frameWidth="260" frameHeight="296" />
-<SubTexture name="idle0004" x="0" y="216" width="102" height="142" frameX="-63" frameY="-101" frameWidth="260" frameHeight="296" />
-<SubTexture name="up0000" x="0" y="0" width="122" height="216" frameX="-58" frameY="-14" frameWidth="260" frameHeight="296" />
-<SubTexture name="up0001" x="122" y="0" width="133" height="205" frameX="-52" frameY="-22" frameWidth="260" frameHeight="296" />
-<SubTexture name="down0000" x="366" y="358" width="125" height="122" frameX="-47" frameY="-121" frameWidth="260" frameHeight="296" />
-<SubTexture name="down0001" x="245" y="358" width="121" height="125" frameX="-49" frameY="-118" frameWidth="260" frameHeight="296" />
-<SubTexture name="left0000" x="442" y="138" width="159" height="137" frameX="-7" frameY="-101" frameWidth="260" frameHeight="296" />
-<SubTexture name="left0001" x="275" y="216" width="157" height="137" frameX="-18" frameY="-101" frameWidth="260" frameHeight="296" />
-<SubTexture name="right0000" x="102" y="216" width="173" height="138" frameX="-65" frameY="-105" frameWidth="260" frameHeight="296" />
-<SubTexture name="right0001" x="442" y="0" width="168" height="138" frameX="-58" frameY="-105" frameWidth="260" frameHeight="296" />
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="nedzman.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="idle00000" x="0" y="0" width="238" height="242"/>
+	<SubTexture name="idle00001" x="238" y="0" width="238" height="242"/>
+	<SubTexture name="idle00002" x="476" y="0" width="238" height="242"/>
+	<SubTexture name="idle00003" x="714" y="0" width="238" height="242"/>
+	<SubTexture name="down00000" x="0" y="242" width="238" height="242"/>
+	<SubTexture name="down00001" x="238" y="242" width="238" height="242"/>
+	<SubTexture name="up00000" x="476" y="242" width="238" height="242"/>
+	<SubTexture name="up00001" x="714" y="242" width="238" height="242"/>
+	<SubTexture name="left00000" x="0" y="484" width="238" height="242"/>
+	<SubTexture name="left00001" x="238" y="484" width="238" height="242"/>
+	<SubTexture name="right00000" x="476" y="484" width="238" height="242"/>
+	<SubTexture name="right00001" x="714" y="484" width="238" height="242"/>
 </TextureAtlas>

@@ -1,7 +1,7 @@
 {
 	"song": {
-		"player1": "jackass",
-		"player2": "mann",
+		"player1": "bfvloo",
+		"player2": "nedzfan",
 		"events": [],
 		"notes": [
 			{
@@ -9281,7 +9281,7 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "gf",
+		"gfVersion": "beth",
 		"splashSkin": "noteSplashes",
 		"song": "man",
 		"validScore": true,
