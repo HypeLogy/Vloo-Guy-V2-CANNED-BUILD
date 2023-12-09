@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextureAtlas imagePath="bfvlooy.png">
 	<!-- Made using Maru Aseprite JSON to XML converter -->
-	<SubTexture name="idle00000" x="0" y="0" width="291" height="196"/>
-	<SubTexture name="idle00001" x="291" y="0" width="291" height="196"/>
-	<SubTexture name="idle00002" x="582" y="0" width="291" height="196"/>
-	<SubTexture name="idle00003" x="873" y="0" width="291" height="196"/>
-	<SubTexture name="down00000" x="1164" y="0" width="291" height="196"/>
-	<SubTexture name="down00001" x="0" y="196" width="291" height="196"/>
-	<SubTexture name="left00000" x="291" y="196" width="291" height="196"/>
-	<SubTexture name="left00001" x="582" y="196" width="291" height="196"/>
-	<SubTexture name="up00000" x="873" y="196" width="291" height="196"/>
-	<SubTexture name="up00001" x="1164" y="196" width="291" height="196"/>
-	<SubTexture name="right00000" x="0" y="392" width="291" height="196"/>
-	<SubTexture name="right00001" x="291" y="392" width="291" height="196"/>
-	<SubTexture name="missdown00000" x="582" y="392" width="291" height="196"/>
-	<SubTexture name="missdown00001" x="873" y="392" width="291" height="196"/>
-	<SubTexture name="missleft00000" x="1164" y="392" width="291" height="196"/>
-	<SubTexture name="missleft00001" x="0" y="588" width="291" height="196"/>
-	<SubTexture name="missup00000" x="291" y="588" width="291" height="196"/>
-	<SubTexture name="missup00001" x="582" y="588" width="291" height="196"/>
-	<SubTexture name="missright00000" x="873" y="588" width="291" height="196"/>
-	<SubTexture name="missright00001" x="1164" y="588" width="291" height="196"/>
+	<SubTexture name="idle00000" x="0" y="0" width="251" height="178"/>
+	<SubTexture name="idle00001" x="251" y="0" width="251" height="178"/>
+	<SubTexture name="idle00002" x="502" y="0" width="251" height="178"/>
+	<SubTexture name="idle00003" x="753" y="0" width="251" height="178"/>
+	<SubTexture name="idle00004" x="1004" y="0" width="251" height="178"/>
+	<SubTexture name="hey00000" x="0" y="178" width="251" height="178"/>
+	<SubTexture name="hey00001" x="251" y="178" width="251" height="178"/>
+	<SubTexture name="left00000" x="502" y="178" width="251" height="178"/>
+	<SubTexture name="left00001" x="753" y="178" width="251" height="178"/>
+	<SubTexture name="right00000" x="1004" y="178" width="251" height="178"/>
+	<SubTexture name="right00001" x="0" y="356" width="251" height="178"/>
+	<SubTexture name="down00000" x="251" y="356" width="251" height="178"/>
+	<SubTexture name="down00001" x="502" y="356" width="251" height="178"/>
+	<SubTexture name="up00000" x="753" y="356" width="251" height="178"/>
+	<SubTexture name="up00001" x="1004" y="356" width="251" height="178"/>
+	<SubTexture name="missleft00000" x="0" y="534" width="251" height="178"/>
+	<SubTexture name="missleft00001" x="251" y="534" width="251" height="178"/>
+	<SubTexture name="missright00000" x="502" y="534" width="251" height="178"/>
+	<SubTexture name="missright00001" x="753" y="534" width="251" height="178"/>
+	<SubTexture name="missdown00000" x="1004" y="534" width="251" height="178"/>
+	<SubTexture name="missdown00001" x="0" y="712" width="251" height="178"/>
+	<SubTexture name="missup00000" x="251" y="712" width="251" height="178"/>
+	<SubTexture name="missup00001" x="502" y="712" width="251" height="178"/>
 </TextureAtlas>

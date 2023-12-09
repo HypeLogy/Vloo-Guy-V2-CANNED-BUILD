@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "firstDeath",
+			"fps": 12,
+			"name": "dead",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "deathConfirm",
+			"fps": 12,
+			"name": "back",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "idle"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/dead",
+	"position": [
+		-30,
+		-10
+	],
+	"healthicon": "bfvloo",
+	"flip_x": true,
+	"healthbar_colors": [
+		208,
+		107,
+		66
+	],
+	"camera_position": [
+		-200,
+		140
+	],
+	"sing_duration": 4,
+	"scale": 0.999999999999997
+}

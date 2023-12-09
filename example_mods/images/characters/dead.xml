@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dead.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="dead00000" x="0" y="0" width="412" height="292"/>
+	<SubTexture name="dead00001" x="412" y="0" width="412" height="292"/>
+	<SubTexture name="dead00002" x="824" y="0" width="412" height="292"/>
+	<SubTexture name="dead00003" x="1236" y="0" width="412" height="292"/>
+	<SubTexture name="dead00004" x="1648" y="0" width="412" height="292"/>
+	<SubTexture name="dead00005" x="0" y="292" width="412" height="292"/>
+	<SubTexture name="dead00006" x="412" y="292" width="412" height="292"/>
+	<SubTexture name="dead00007" x="824" y="292" width="412" height="292"/>
+	<SubTexture name="dead00008" x="824" y="292" width="412" height="292"/>
+	<SubTexture name="dead00009" x="1236" y="292" width="412" height="292"/>
+	<SubTexture name="dead00010" x="1648" y="292" width="412" height="292"/>
+	<SubTexture name="dead00011" x="0" y="584" width="412" height="292"/>
+	<SubTexture name="dead00012" x="412" y="584" width="412" height="292"/>
+	<SubTexture name="dead00013" x="824" y="584" width="412" height="292"/>
+	<SubTexture name="dead00014" x="1236" y="584" width="412" height="292"/>
+	<SubTexture name="idle00000" x="1236" y="584" width="412" height="292"/>
+	<SubTexture name="idle00001" x="1648" y="584" width="412" height="292"/>
+	<SubTexture name="idle00002" x="0" y="876" width="412" height="292"/>
+	<SubTexture name="idle00003" x="412" y="876" width="412" height="292"/>
+	<SubTexture name="idle00004" x="824" y="876" width="412" height="292"/>
+	<SubTexture name="idle00005" x="1236" y="876" width="412" height="292"/>
+	<SubTexture name="back00000" x="1648" y="876" width="412" height="292"/>
+	<SubTexture name="back00001" x="0" y="1168" width="412" height="292"/>
+	<SubTexture name="back00002" x="412" y="1168" width="412" height="292"/>
+	<SubTexture name="back00003" x="824" y="1168" width="412" height="292"/>
+	<SubTexture name="back00004" x="1236" y="1168" width="412" height="292"/>
+</TextureAtlas>

@@ -1,3 +1,5 @@
+local eventNum = 0;
+
 function onCreate()
 	makeLuaSprite('back','stages/midnight/sky', 0, 0);
 	updateHitbox('back');
@@ -53,4 +55,14 @@ function onCreate()
       setObjectOrder('gfGroup', 5)
       setObjectOrder('dadGroup', 6)
       setObjectOrder('boyfriendGroup', 7)
+end
+
+function onStepHit()
+	if(songName == "midnight") then 
+		if(curStep == 16 and eventNum == "0") then
+			setProperty('defaultZoom',1.65)
+			setProperty('camera_opponent',(0,-50))
+			eventNum = eventNum + 1
+		end
+	end
 end

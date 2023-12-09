@@ -59,8 +59,8 @@
 	"no_antialiasing": true,
 	"image": "characters/bfvlooy",
 	"position": [
-		-30,
-		10
+		0,
+		-5
 	],
 	"healthicon": "bf",
 	"flip_x": true,
