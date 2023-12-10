@@ -2,12 +2,182 @@
 	"song": {
 		"events": [
 			[
+				0,
+				[
+					[
+						"Play Sound",
+						"thunder",
+						"0.7"
+					],
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				33391.3043478261,
+				[
+					[
+						"Play Sound",
+						"thunder",
+						"0.7"
+					],
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				66782.6086956521,
+				[
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					],
+					[
+						"Play Sound",
+						"thunder",
+						"0.7"
+					]
+				]
+			],
+			[
+				100173.913043478,
+				[
+					[
+						"Play Sound",
+						"thunder",
+						"0.7"
+					],
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				116869.565217391,
+				[
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					],
+					[
+						"Play Sound",
+						"thunder",
+						"0.7"
+					]
+				]
+			],
+			[
+				134086.956521739,
+				[
+					[
+						"Play Sound",
+						"thunder",
+						"0.7"
+					],
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				150260.869565218,
+				[
+					[
+						"Play Sound",
+						"thunder",
+						"0.7"
+					],
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				164869.565217392,
+				[
+					[
+						"Change Character",
+						"dad",
+						"transyed"
+					],
+					[
+						"Play Animation",
+						"trans",
+						"dad"
+					]
+				]
+			],
+			[
 				166434.782608696,
 				[
 					[
 						"Change Character",
 						"dad",
 						"yeguy2"
+					]
+				]
+			],
+			[
+				166956.521739131,
+				[
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					],
+					[
+						"Play Sound",
+						"thunder",
+						"0.7 "
+					]
+				]
+			],
+			[
+				175304.347826087,
+				[
+					[
+						"Play Sound",
+						"thunder",
+						"0.7 "
+					],
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				217043.47826087,
+				[
+					[
+						"Change Character",
+						"dad",
+						"yeguy"
+					],
+					[
+						"Flash Camera",
+						"0.8",
+						""
+					],
+					[
+						"Play Sound",
+						"thunder",
+						"0.7"
 					]
 				]
 			]
