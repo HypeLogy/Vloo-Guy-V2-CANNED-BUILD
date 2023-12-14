@@ -1,44 +1,8 @@
 {
 	"song": {
 		"player1": "bfvloo",
-		"player2": "michaelll2",
-		"events": [
-			[
-				93473.6842105263,
-				[
-					[
-						"Change Scroll Speed",
-						"1.2",
-						"0.1"
-					]
-				]
-			],
-			[
-				97263.1578947368,
-				[
-					[
-						"Flash Camera",
-						"0.5",
-						""
-					]
-				]
-			],
-			[
-				159157.894736842,
-				[
-					[
-						"Change Scroll Speed",
-						"1",
-						"0.1"
-					],
-					[
-						"Flash Camera",
-						"0.5",
-						""
-					]
-				]
-			]
-		],
+		"player2": "mike",
+		"events": [],
 		"notes": [
 			{
 				"typeOfSection": 0,
@@ -8815,7 +8779,7 @@
 				"mustHitSection": true
 			}
 		],
-		"gfVersion": "gfvloo_standing",
+		"gfVersion": "gf-vloo",
 		"splashSkin": "noteSplashes",
 		"song": "nightwatch",
 		"validScore": true,
