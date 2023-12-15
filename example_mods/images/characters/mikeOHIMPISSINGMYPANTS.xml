@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mikeOHIMPISSINGMYPANTS.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="idle00000" x="0" y="0" width="300" height="200"/>
+	<SubTexture name="idle00001" x="300" y="0" width="300" height="200"/>
+	<SubTexture name="idle00002" x="600" y="0" width="300" height="200"/>
+	<SubTexture name="idle00003" x="900" y="0" width="300" height="200"/>
+	<SubTexture name="right00000" x="0" y="200" width="300" height="200"/>
+	<SubTexture name="right00001" x="300" y="200" width="300" height="200"/>
+	<SubTexture name="down00000" x="600" y="200" width="300" height="200"/>
+	<SubTexture name="down00001" x="900" y="200" width="300" height="200"/>
+	<SubTexture name="up00000" x="0" y="400" width="300" height="200"/>
+	<SubTexture name="up00001" x="300" y="400" width="300" height="200"/>
+	<SubTexture name="left00000" x="600" y="400" width="300" height="200"/>
+	<SubTexture name="left00001" x="900" y="400" width="300" height="200"/>
+</TextureAtlas>

@@ -1,7 +1,9 @@
 {
 	"song": {
 		"player1": "bfvloo",
+		"events": [],
 		"gfVersion": "gf-vloo",
+		"player2": "mike",
 		"notes": [
 			{
 				"sectionBeats": 4,
@@ -7053,15 +7055,13 @@
 				"mustHitSection": true
 			}
 		],
-		"events": [],
-		"player2": "mike",
-		"splashSkin": "noteSplashes",
+		"sliderVelocities": null,
 		"song": "nightwatch",
 		"needsVoices": true,
 		"arrowSkin": "",
 		"stage": "nightwatch",
 		"validScore": true,
-		"bpm": 95,
-		"speed": 2.6
+		"speed": 2.6,
+		"bpm": 95
 	}
 }

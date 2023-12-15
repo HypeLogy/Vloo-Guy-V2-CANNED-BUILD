@@ -8786,6 +8786,7 @@
 		"stage": "nightwatch",
 		"arrowSkin": "",
 		"needsVoices": true,
+		"sliderVelocities": null,
 		"speed": 2.6,
 		"bpm": 95
 	}
