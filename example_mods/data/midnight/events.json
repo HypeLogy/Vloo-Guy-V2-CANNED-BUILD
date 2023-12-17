@@ -147,6 +147,21 @@
 				]
 			],
 			[
+				173478.260869565,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bfvlooguitar"
+					],
+					[
+						"Play Animation",
+						"whipguitarout",
+						"bf"
+					]
+				]
+			],
+			[
 				175304.347826087,
 				[
 					[
@@ -178,6 +193,16 @@
 						"Play Sound",
 						"thunder",
 						"0.7"
+					]
+				]
+			],
+			[
+				217826.086956522,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bfvloo"
 					]
 				]
 			]

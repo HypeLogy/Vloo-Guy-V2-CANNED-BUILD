@@ -203,96 +203,104 @@ function onStepHit()
 			setProperty('boyfriendCameraOffset[0]', -45)
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1408 and eventNum == 35) then
+		if(curStep >= 1328 and eventNum == 35) then
+			setProperty('opponentCameraOffset[0]', 195)
+			eventNum = eventNum + 1
+		end
+		if(curStep >= 1346 and eventNum == 36) then
+			setProperty('opponentCameraOffset[0]', 0)
+			eventNum = eventNum + 1
+		end
+		if(curStep >= 1408 and eventNum == 37) then
 			zoom1 = 2.7
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1656 and eventNum == 36) then
+		if(curStep >= 1656 and eventNum == 38) then
 			zoom1 = 2.6
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1657 and eventNum == 37) then
+		if(curStep >= 1657 and eventNum == 39) then
 			zoom1 = 2.5
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1658 and eventNum == 38) then
+		if(curStep >= 1658 and eventNum == 40) then
 			zoom1 = 2.4
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1659 and eventNum == 39) then
+		if(curStep >= 1659 and eventNum == 41) then
 			zoom1 = 2.3
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1660 and eventNum == 40) then
+		if(curStep >= 1660 and eventNum == 42) then
 			zoom1 = 2.2
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1661 and eventNum == 41) then
+		if(curStep >= 1661 and eventNum == 43) then
 			zoom1 = 2.1
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1662 and eventNum == 42) then
+		if(curStep >= 1662 and eventNum == 44) then
 			zoom1 = 2
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1663 and eventNum == 43) then
+		if(curStep >= 1663 and eventNum == 45) then
 			zoom1 = 1.9
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1664 and eventNum == 44) then
+		if(curStep >= 1664 and eventNum == 46) then
 			zoom1 = 1.7
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1680 and eventNum == 45) then
+		if(curStep >= 1680 and eventNum == 47) then
 			zoom1 = 1.75
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1696 and eventNum == 46) then
+		if(curStep >= 1696 and eventNum == 48) then
 			zoom1 = 1.8
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1704 and eventNum == 47) then
+		if(curStep >= 1704 and eventNum == 49) then
 			zoom1 = 1.85
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1712 and eventNum == 48) then
+		if(curStep >= 1712 and eventNum == 50) then
 			zoom1 = 1.9
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1720 and eventNum == 49) then
+		if(curStep >= 1720 and eventNum == 51) then
 			zoom1 = 1.95
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1728 and eventNum == 50) then
+		if(curStep >= 1728 and eventNum == 52) then
 			zoom1 = 1.7
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1744 and eventNum == 51) then
+		if(curStep >= 1744 and eventNum == 53) then
 			zoom1 = 1.75
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1760 and eventNum == 52) then
+		if(curStep >= 1760 and eventNum == 54) then
 			zoom1 = 1.8
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1768 and eventNum == 53) then
+		if(curStep >= 1768 and eventNum == 55) then
 			zoom1 = 1.85
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1776 and eventNum == 54) then
+		if(curStep >= 1776 and eventNum == 56) then
 			zoom1 = 1.9
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1784 and eventNum == 55) then
+		if(curStep >= 1784 and eventNum == 57) then
 			zoom1 = 1.95
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1792 and eventNum == 56) then
+		if(curStep >= 1792 and eventNum == 58) then
 			zoom1 = 1.7
 			eventNum = eventNum + 1
 		end
-		if(curStep >= 1808 and eventNum == 57) then
-			setProperty('defaultCamZoom', 2.4)
+		if(curStep >= 1808 and eventNum == 59) then
+			setProperty('defaultCamZoom', 2.6)
 			eventNum = eventNum + 1
 		end
 	end

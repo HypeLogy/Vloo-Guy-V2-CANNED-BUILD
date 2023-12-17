@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bfvlooyguitar.png">
+	<!-- Made using Maru Aseprite JSON to XML converter -->
+	<SubTexture name="guitarintro00000" x="0" y="0" width="198" height="179"/>
+	<SubTexture name="guitarintro00001" x="0" y="0" width="198" height="179"/>
+	<SubTexture name="guitarintro00002" x="198" y="0" width="198" height="179"/>
+	<SubTexture name="guitarintro00003" x="396" y="0" width="198" height="179"/>
+	<SubTexture name="guitarintro00004" x="594" y="0" width="198" height="179"/>
+	<SubTexture name="guitarintro00005" x="792" y="0" width="198" height="179"/>
+	<SubTexture name="guitarintro00006" x="594" y="0" width="198" height="179"/>
+	<SubTexture name="guitarintro00007" x="990" y="0" width="198" height="179"/>
+	<SubTexture name="guitarintro00008" x="0" y="179" width="198" height="179"/>
+	<SubTexture name="guitarintro00009" x="198" y="179" width="198" height="179"/>
+	<SubTexture name="guitarintro00010" x="396" y="179" width="198" height="179"/>
+	<SubTexture name="guitarintro00011" x="594" y="179" width="198" height="179"/>
+	<SubTexture name="guitarintro00012" x="792" y="179" width="198" height="179"/>
+	<SubTexture name="guitarintro00013" x="990" y="179" width="198" height="179"/>
+	<SubTexture name="guitarintro00014" x="0" y="358" width="198" height="179"/>
+	<SubTexture name="guitarintro00015" x="198" y="358" width="198" height="179"/>
+	<SubTexture name="guitarintro00016" x="396" y="358" width="198" height="179"/>
+	<SubTexture name="guitarintro00017" x="594" y="358" width="198" height="179"/>
+	<SubTexture name="guitarintro00018" x="792" y="358" width="198" height="179"/>
+	<SubTexture name="idle00000" x="198" y="358" width="198" height="179"/>
+	<SubTexture name="idle00001" x="396" y="358" width="198" height="179"/>
+	<SubTexture name="idle00002" x="594" y="358" width="198" height="179"/>
+	<SubTexture name="idle00003" x="792" y="358" width="198" height="179"/>
+	<SubTexture name="up00000" x="990" y="358" width="198" height="179"/>
+	<SubTexture name="up00001" x="0" y="537" width="198" height="179"/>
+	<SubTexture name="up00002" x="198" y="537" width="198" height="179"/>
+	<SubTexture name="right00000" x="396" y="537" width="198" height="179"/>
+	<SubTexture name="right00001" x="594" y="537" width="198" height="179"/>
+	<SubTexture name="right00002" x="792" y="537" width="198" height="179"/>
+	<SubTexture name="left00000" x="990" y="537" width="198" height="179"/>
+	<SubTexture name="left00001" x="0" y="716" width="198" height="179"/>
+	<SubTexture name="left00002" x="198" y="716" width="198" height="179"/>
+	<SubTexture name="down00000" x="396" y="716" width="198" height="179"/>
+	<SubTexture name="down00001" x="594" y="716" width="198" height="179"/>
+	<SubTexture name="down00002" x="792" y="716" width="198" height="179"/>
+</TextureAtlas>

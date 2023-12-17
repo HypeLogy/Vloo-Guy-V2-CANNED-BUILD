@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-174,
+				-29
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-168,
+				-31
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				-176,
+				-31
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-170,
+				-32
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-174,
+				-29
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-174,
+				-29
+			],
+			"indices": [],
+			"fps": 12,
+			"anim": "whipguitarout",
+			"loop": false,
+			"name": "guitarintro"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/bfvlooyguitar",
+	"position": [
+		19,
+		2
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		208,
+		107,
+		66
+	],
+	"camera_position": [
+		-259,
+		103
+	],
+	"sing_duration": 4,
+	"scale": 0.999999999999997
+}
